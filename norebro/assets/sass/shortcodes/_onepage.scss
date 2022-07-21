@@ -1,0 +1,93 @@
+.norebro-onepage {
+	width: 100%;
+	min-height: 200px;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+
+	.onepage-section {
+		background-position: center;
+		background-size: cover;
+		height: 100vh;
+	}
+
+	.onepage-nav {
+		div {
+			position: absolute;
+			bottom: 40px;
+			right: 40px;
+			z-index: 3;
+		}
+
+		.up {
+			bottom: 100px;
+		}
+	}
+
+	
+	&.horizontal {
+		.onepage-stage {
+			width: 100000px;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+
+			.onepage-section {
+				float: left;
+			}
+		}
+
+		.onepage-nav {
+			div {
+				bottom: 40px;
+				transform: rotate(-90deg);
+			}
+
+			.up {
+				right: 100px;
+			}
+		}
+	}
+
+
+	@media screen and (max-width: 768px){
+		&.disable-on-mobile {
+			height: auto;
+
+			.onepage-section {
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+				padding: 0;
+			}
+
+			.onepage-nav,
+			.onepage-dots {
+				display: none;
+			}
+		}
+
+		.onepage-nav {
+			div {
+				bottom: 25px;
+				right: 25px;
+			}
+
+			.up {
+				bottom: 80px;
+			}
+		}
+		.onepage-dots {
+			right: 20px;
+		}
+
+		&.horizontal .onepage-nav {
+			.up {
+				right: 80px;
+			}
+			.down {
+				right: 25px;
+			}
+		}
+	}
+}

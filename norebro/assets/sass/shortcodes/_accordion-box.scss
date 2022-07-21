@@ -1,0 +1,124 @@
+.accordion-box {
+	div.title {
+		background: #f6f6f6;
+		color: $color_dark;
+		width: 100%;
+		padding: 16px 50px 15px 20px;
+		position: relative;
+		cursor: pointer;
+
+		.icon {
+			color: inherit;
+			margin-right: 5px;
+			display: inline-block;
+			font-size: 20px;
+			line-height: 0;
+			vertical-align: -3px;
+		}
+
+		h4 {
+			color: inherit;
+			margin: 0 0 -4px;
+			font-size: $font_small-size;
+			line-height: 1.4;
+			font-weight: 600;
+			display: inline-block;
+		}
+
+		.control {
+			margin-top: -10px;
+			font-size: 18px;
+			line-height: 1.4;
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			transition: color .15s ease-in-out;
+		}
+
+		&:hover {
+			.control {
+				color: $color_brand;
+			}
+		}
+	}
+
+	.item.active .control {
+		color: $color_brand;
+	}
+
+	.content {
+		height: 6px;
+		min-height: 6px;
+		overflow: hidden;
+		transition: height .4s cubic-bezier(.35, .2, .2, 1);
+
+		&.open {
+			height: auto;
+		}
+
+		.wrap {
+			padding: 10px 20px;
+		}
+	}
+
+	&.title-brand-bg-color {
+		.title {
+			background: $color_brand;
+		}
+	}
+
+	&.title-brand-color {
+		.title {
+			color: $color_brand;
+		}
+	}
+
+	&.active-brand-color {
+		.item.active .control,
+		.title:hover .control {
+			color: $color_brand;
+		}
+	}
+
+	&.outline {
+		.title {
+			background: transparent;
+			border: 1px solid #ebebeb;
+			border-bottom-width: 0;
+			border-left: none;
+			border-right: none;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.control {
+			right: 0;
+		}
+
+		.content {
+			height: 0;
+			min-height: 0;
+
+			&.open {
+				height: auto;
+			}
+
+			.wrap {
+				padding: 10px 0;
+			}
+		}
+
+		.item.active,
+		.item:last-child {
+			.title {
+				border-bottom-width: 1px;
+			}
+		}
+
+		&.title-brand-border-color {
+			.title {
+				border-color: $color_brand;
+			}
+		}
+	}
+}

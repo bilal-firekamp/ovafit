@@ -1,0 +1,174 @@
+.timeline {
+	text-align: left;
+
+	h3 {
+		font-size: $font_main-size;
+	}
+
+	.subtitle {
+		margin-top: 5px;
+		font-size: $font_small-size;
+		font-weight: 500;
+	}
+
+	.description {
+		margin-top: 5px;
+		font-weight: 300;
+	}
+
+	.content {
+		position: relative;
+
+		.wrap {
+			margin: 0 0 40px 60px;
+			position: relative;
+			transition: 1s cubic-bezier(.4,.7,.3,1);
+
+			&.hidden {
+				display: block;
+				visibility: visible;
+				opacity: 0;
+				transform: translateX(100px) scale(.9);
+			}
+		}
+
+		&:after {
+			content: '';
+			width: 20px;
+			height: 20px;
+			border: 7px solid $color_dark;
+			border-radius: 50px;
+			position: absolute;
+			top: 0;
+			left: 1px;
+		}
+
+		&:before {
+			content: '';
+			background: rgba(#000,.1);
+			height: calc(100% + 30px);
+			width: 2px;
+			position: absolute;
+			top: 15px;
+			left: 10px;
+		}
+
+		&:last-of-type {
+			padding-bottom: 0;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		&.boxed {
+			.wrap {
+				background: $color_dark;
+				padding: 25px;
+				margin-left: 35px;
+			}
+
+			h3, .description {
+				color: #fff;
+			}
+
+			&:after, &:before {
+				top: 20px;
+			}
+
+			&:before {
+				height: calc(100% + 40px);
+			}
+
+			.subtitle {
+				color: rgba(#fff,.5);
+			}
+
+			.description {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.triangle {
+		position: absolute;
+		background: inherit;
+		width: 10px;
+		height: 10px;
+		top: 25px;
+		left: -5px;
+		transform: rotate(45deg);
+	}
+
+
+	&.right {
+		text-align: right;
+
+		.content {
+			.wrap {
+				margin-left: 0;
+				margin-right: 60px;
+
+				&.hidden {
+					transform: translateX(-100px) scale(.9);
+				}
+			}
+
+			&:after {
+				left: auto;
+				right: 1px;
+			}
+
+			&:before {
+				left: auto;
+				right: 10px;
+			}
+
+			&.boxed {
+				text-align: left;
+				
+				.wrap {
+					margin-right: 35px;
+				}
+			}
+		}
+
+		.triangle {
+			left: auto;
+			right: -5px;
+		}
+	}
+
+
+	@media screen and (max-width: 768px){
+		.content {
+			.wrap {
+				margin: 0 0 40px 40px;
+			}
+
+			&:after {
+				left: -10px;
+			}
+
+			&:before {
+				left: -1px;
+			}
+		}
+
+		&.right {
+			.content {
+				.wrap {
+					margin-right: 30px;
+				}
+
+				&:after {
+					right: -10px;
+				}
+
+				&:before {
+					right: -1px;
+				}
+			}
+		}
+	}
+}

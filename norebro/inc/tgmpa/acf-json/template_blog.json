@@ -1,0 +1,467 @@
+{
+    "key": "group_593dd5f5615b0",
+    "title": "Blog Settings",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_591b002d4818sffmod",
+            "label": "Blog Layout",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_593dd5f56ca9d",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p class=\"message\"><span class=\"icon ion-information-circled\"></span> <b>Note:</b> to find more blog options navigate to global settings <b>Theme Settings &gt; Blog Settings</b></p>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_593dd5f56bae0",
+            "label": "Blog layout",
+            "name": "blog_item_layout_type",
+            "type": "image_option",
+            "instructions": "Choose layout type for blog grid",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "image_option_value": [
+                {
+                    "name": "inherit",
+                    "description": "Theme settings inherited",
+                    "src": "acf__image_inherited.svg"
+                },
+                {
+                    "name": "classic",
+                    "description": "Classic",
+                    "src": "nor__listing_07.svg"
+                },
+                {
+                    "name": "simple",
+                    "description": "Simple",
+                    "src": "nor__listing_09.svg"
+                },
+                {
+                    "name": "side_image",
+                    "description": "Side image",
+                    "src": "nor__listing_08.svg"
+                },
+                {
+                    "name": "overlay",
+                    "description": "Overlay",
+                    "src": "nor__listing_10.svg"
+                },
+                {
+                    "name": "striped",
+                    "description": "Striped",
+                    "src": "nor__listing_11.svg"
+                }
+            ],
+            "default_value": [
+                "inherit"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_593dd5f56af4c",
+            "label": "Grid layout",
+            "name": "blog_page_layout",
+            "type": "radio",
+            "instructions": "Choose grid layout type",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "classic": "Classic layout",
+                "masonry": "Masonry layout"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_593dd5f56c2b2",
+            "label": "Grid spacing",
+            "name": "blog_items_without_padding",
+            "type": "radio",
+            "instructions": "Remove spacing between grid items",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59ccb100ba6f7nomod",
+            "label": "Blog categories",
+            "name": "blog_categories",
+            "type": "taxonomy",
+            "instructions": "Leave empty if want show all categories",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "checkbox",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 1
+        },
+        {
+            "key": "field_592d60af8a7ffmo7ds",
+            "label": "Grid animation",
+            "name": "blog_page_animation_type",
+            "type": "radio",
+            "instructions": "Choose grid animation type",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "default": "Without animation",
+                "sync": "Sync animation",
+                "async": "Async animation"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592d60af8ac17d27mo7ds",
+            "label": "Grid animation effect",
+            "name": "blog_page_animation_effect",
+            "type": "select",
+            "instructions": "Choose blog items appear effect",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "fade-up": "Fade up",
+                "fade-down": "Fade down",
+                "fade-right": "Fade right",
+                "fade-left": "Fade left",
+                "flip-up": "Flip up",
+                "flip-down": "Flip down",
+                "zoom-in": "Zoom in",
+                "zoom-out": "Zoom out"
+            },
+            "default_value": [
+                "inherit"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_593dd5f56b310",
+            "label": "Blog items per page",
+            "name": "blog_columns_in_row",
+            "type": "norebro_columns",
+            "instructions": "Choose the number of blog items per page",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593dd5f56af4c",
+                        "operator": "==",
+                        "value": "masonry"
+                    },
+                    {
+                        "field": "field_593dd5f56bae0",
+                        "operator": "!=",
+                        "value": "striped"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "i-i-i-i",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": "",
+            "use_inherit": true
+        },
+        {
+            "key": "field_593dd5f56bedd",
+            "label": "Items boxed style",
+            "name": "blog_items_boxed_style",
+            "type": "true_false",
+            "instructions": "Append box wrapper for post cards",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593dd5f56bae0",
+                        "operator": "!=",
+                        "value": "overlay"
+                    },
+                    {
+                        "field": "field_593dd5f56bae0",
+                        "operator": "!=",
+                        "value": "simple"
+                    },
+                    {
+                        "field": "field_593dd5f56bae0",
+                        "operator": "!=",
+                        "value": "inherit"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Wrap in box",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_593dd5f56beddfmod",
+            "label": "Show cards in striped view?",
+            "name": "blog_posts_grid_is_striped",
+            "type": "true_false",
+            "instructions": "Add striped order of post cards alignment",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593dd5f56bae0",
+                        "operator": "==",
+                        "value": "striped"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Striped view",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_593dd5f56beddsemod",
+            "label": "Add indented to cards view?",
+            "name": "blog_posts_grid_is_indented",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593dd5f56bae0",
+                        "operator": "==",
+                        "value": "striped"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Indented view",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_591b002d4817sffmod",
+            "label": "Blog Page",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_593dd5f56b70f",
+            "label": "Blog items per page",
+            "name": "blog_posts_per_page",
+            "type": "number",
+            "instructions": "Choose the number of blog items per page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 24,
+            "placeholder": "",
+            "prepend": "",
+            "append": "posts",
+            "min": 1,
+            "max": 100,
+            "step": 1
+        },
+        {
+            "key": "field_593dd5f56ba30",
+            "label": "Pagination",
+            "name": "blog_pagination_type",
+            "type": "select",
+            "instructions": "Choose pagination type for blog page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "simple": "Simple",
+                "lazy_scroll": "Lazy load",
+                "lazy_button": "Load more button"
+            },
+            "default_value": [
+                "simple"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_593dd523442330",
+            "label": "Pagination position",
+            "name": "blog_pagination_position",
+            "type": "select",
+            "instructions": "Choose pagination type for blog page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "left": "Left",
+                "center": "Center",
+                "right": "Right"
+            },
+            "default_value": [
+                "left"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/page_for-posts.php"
+            },
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

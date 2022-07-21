@@ -1,0 +1,75 @@
+{
+   "norebro-sidebar-blog":{
+      "search-2":{
+         "title":""
+      },
+      "recent-posts-2":{
+         "title":"",
+         "number":5
+      },
+      "recent-comments-2":{
+         "title":"",
+         "number":5
+      },
+      "archives-2":{
+         "title":"",
+         "count":0,
+         "dropdown":0
+      },
+      "categories-2":{
+         "title":"",
+         "count":0,
+         "hierarchical":0,
+         "dropdown":0
+      },
+      "meta-2":{
+         "title":""
+      }
+   },
+   "norebro-sidebar-footer-1":{
+      "norebro_widget_subscribe-2":{
+         "title":"",
+         "feedburner":""
+      },
+      "custom_html-2":{
+         "title":"",
+         "content":"Be the first to find out about exclusive deals, the latest Lookbooks, and top trends."
+      }
+   },
+   "norebro-sidebar-footer-2":{
+      "norebro_widget_contact-2":{
+         "title":"K\u00f8benhavn",
+         "phone":"+1 601 722 8001",
+         "address":"Fensmark 23, K\u00f8benhavn N",
+         "email":"norebrotheme@clbthemes.com",
+         "enable_soc_icons":""
+      },
+      "norebro_widget_socialbar_subscribe-2":{
+         "title":"",
+         "facebook":"#",
+         "instagram":"#",
+         "twitter":"#",
+         "googleplus":"#",
+         "pinterest":"#",
+         "linkedin":""
+      }
+   },
+   "norebro-sidebar-footer-3":{
+      "recent-comments-3":{
+         "title":"",
+         "number":3
+      }
+   },
+   "norebro-sidebar-footer-4":{
+      "norebro_widget_recent_posts-2":{
+         "title":"Recent Posts",
+         "limit":2,
+         "categories":"1",
+         "date":"1",
+         "comments":null,
+         "author":null,
+         "thumb":null,
+         "cat":""
+      }
+   }
+}

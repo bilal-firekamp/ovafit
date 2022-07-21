@@ -1,0 +1,158 @@
+.tooltip {
+	display: inline-block;
+	position: relative;
+	cursor: help;
+	text-decoration: underline;
+
+	.tooltip-text {
+		background: $color_dark;
+		color: $color_white;
+		padding: 6px 13px;
+		font-size: $font_extra_small-size;
+		line-height: 1.4;
+		position: relative;
+		bottom: 10px;
+		display: inline-block;
+		cursor: default;
+		transition-property: margin left top bottom right opacity visibility;
+		transition-duration: .2s;
+		transition-timing-function: ease-in-out;
+
+		&:after {
+			content: '';
+			background: inherit;
+			width: 8px;
+			height: 8px;
+			position: absolute;
+			bottom: -4px;
+			left: 50%;
+			margin-left: -4px;
+			transform: rotate(45deg);
+		}
+
+	}
+
+	.tooltip-top,
+	.tooltip-bottom,
+	.tooltip-left,
+	.tooltip-right {
+		width: 500px;
+		height: auto;
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		z-index: 4;
+		transition-property: margin left right top bottom opacity visibility;
+		transition-duration: .2s;
+		transition-timing-function: ease-in-out;
+	}
+
+	.tooltip-bottom {
+		top: 100%;
+		bottom: auto;
+
+		.tooltip-text {
+			top: 10px;
+
+			&:after {
+				top: -4px;
+				bottom: auto;
+			}
+		}
+	}
+
+	.tooltip-left {
+		margin-right: 8px;
+		text-align: right;
+		vertical-align: middle;
+		bottom: auto;
+		left: auto;
+		top: 0;
+		right: 100%;
+
+		.tooltip-text {
+			top: -2px;
+			left: 0;
+
+			&:after {
+				left: auto;
+				top: 10px;
+				right: -4px;
+				margin: 0;
+			}
+		}
+	}
+
+	.tooltip-right {
+		@extend .tooltip-left;
+
+		margin-left: 8px;
+		text-align: left;
+		right: auto;
+		left: 100%;
+
+		.tooltip-text {
+			right: auto;
+			left: 14px;
+
+			&:after {
+				right: auto;
+				left: -4px;
+			}
+		}
+	}
+
+	&:hover {
+		.tooltip-top,
+		.tooltip-bottom,
+		.tooltip-left,
+		.tooltip-right {
+			opacity: 1;
+			visibility: visible;
+
+			&:hover {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+
+		.tooltip-top {
+			.tooltip-text {
+				bottom: 4px;
+			}
+
+			&:hover .tooltip-text {
+				bottom: 10px;
+			}
+		}
+
+		.tooltip-bottom {
+			.tooltip-text {
+				top: 4px;
+			}
+			&:hover .tooltip-text {
+				top: 10px;
+			}
+		}
+
+		.tooltip-left {
+			.tooltip-text {
+				right: 4px;
+			}
+			&:hover .tooltip-text {
+				right: 10px;
+			}
+		}
+
+		.tooltip-right {
+			.tooltip-text {
+				left: 4px;
+			}
+			&:hover .tooltip-text {
+				left: 10px;
+			}
+		}
+	}
+}

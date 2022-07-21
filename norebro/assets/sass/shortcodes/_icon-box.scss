@@ -1,0 +1,115 @@
+.icon-box {
+	text-align: center;
+	display: block;
+	text-decoration: none;
+
+	.icon-wrap {
+		margin: 0 0 5px;
+		display: inline-block;
+		text-align: center;
+		line-height: 70px;
+		vertical-align: middle;
+		font-size: 50px;
+		text-align: inherit;
+		white-space: nowrap;
+
+		&[class*="shape-"] {
+			box-sizing: content-box;
+			width: 55px;
+			height: 55px;
+			margin-bottom: 25px;
+			line-height: 55px;
+			font-size: 34px;
+			text-align: center;
+
+			span {
+				color: inherit;
+
+				&, &:before {
+					vertical-align: 0;
+					line-height: inherit;
+				}
+			}
+		}
+
+		&.shape-border {
+			border: 1px solid;
+		}
+
+		&.shape-border-double {
+			width: 60px;
+			height: 60px;
+			border: 3px double;
+			line-height: 52px;
+		}
+
+		&.shape-rounded {
+			border-radius: 5px;	
+		}
+	}
+
+	h3 {
+		font-size: $font_main-size;
+		margin: 0;
+	}
+
+	.description {
+		display: block;
+		margin-top: 10px;
+	}
+
+	.btn {
+		margin: 12px auto;
+	}
+
+	&.box-left, &.box-right {
+		text-align: left;
+		position: relative;
+
+		.icon-wrap {
+			padding: 0;
+			margin: 0;
+			line-height: 55px;
+			float: left;
+		}
+
+		h3 {
+			margin-top: 5px;
+			clear: none;
+		}
+
+		.content-wrap {
+			padding: 0 0 0 65px;
+		}
+
+		// Full content heading
+		.content-center.with-full {
+			height: 50px;
+			min-height: 50px;
+		}
+		
+		// Full content description
+		.content-full {
+			display: block;
+			clear: both;
+		}
+	}
+
+	&.box-right {
+		text-align: right;
+
+		h3 {
+			text-align: right;
+		}
+
+		.icon-wrap {
+			left: auto;
+			right: 0;
+			float: right;
+		}
+
+		.content-wrap {
+			padding: 0 75px 0 0;
+		}
+	}
+}

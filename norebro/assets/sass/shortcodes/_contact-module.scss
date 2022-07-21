@@ -1,0 +1,89 @@
+.contact-module {
+	position: relative;
+
+	address {
+		margin: 1px 0;
+	}
+
+	a {
+		font-size: $font_small-size;
+	}
+
+	&.list-box-icon-shape li {
+		margin-left: 50px;
+	}
+
+	li {
+		padding-left: 36px;
+	}
+
+	li .icon {
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		vertical-align: 0;
+		text-align: center;
+		color: #49494a;
+		top: 12px;
+		left: 0px;
+		font-size: 25px;
+	}
+
+	li .icon-shape {
+		background: $color_dark;
+		width: 40px;
+		height: 40px;
+		border-radius: 0;
+		font-size: 20px;
+		line-height: 40px;
+		top: 4px;
+		left: -15px;
+	}
+
+	&.list-box-border-items-offset {
+		li {
+			padding-left: 0px;
+			margin-left: 36px;
+		}
+
+		.icon {
+			left: -36px;
+		}
+
+		li.contact-item-icon-filled {
+			margin-left: 55px;
+
+			span.icon-shape {
+				left: -55px;
+			}
+		}
+	}
+
+	li.contact-item-icon-filled {
+		margin-left: 36px;
+
+		span.icon-shape {
+			left: -36px;
+		}
+	}
+
+
+	&.icon-box {
+		.icon-box-shape {
+			background: $color_dark;
+			color: #fff;
+			font-size: 45px;
+			line-height: 90px;
+		}
+
+		h3 {
+			margin-bottom: 8px;
+		}
+
+		address, 
+		p, 
+		a {
+			line-height: 24px;
+		}
+	}
+}

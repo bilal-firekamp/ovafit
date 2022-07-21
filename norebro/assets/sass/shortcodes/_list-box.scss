@@ -1,0 +1,218 @@
+.list-box {
+	margin: 10px 0;
+	list-style: none;
+
+	h4.title {
+		text-align: left;
+		margin: 0;
+		font-size: $font_small-size;
+		font-weight: 600;
+	}
+
+	p {
+		font-size: $font_small-size;
+		margin: 5px 0 0 0;
+	}
+
+	li {
+		padding: 11px 0 10px 30px;
+		position: relative;
+
+		&:after {
+			content: '';
+			background: $color_brand;
+			width: 4px;
+			height: 4px;
+			border-radius: 10px;
+			position: absolute;
+			top: 17px;
+			left: 0;
+		}
+
+		> *:first-child {
+			margin-top: 0;
+		}
+
+		ul {
+			margin-left: -20px;
+			margin-bottom: 0;
+
+			li {
+				padding-left: 35px;
+
+				&:after {
+					left: 18px;
+				}
+
+				&:last-child {
+					padding-bottom: 0;
+					border-bottom: 0;
+				}
+
+				ul {
+					margin-left: -35px;
+
+					li {
+						padding-left: 50px;
+
+						&:after {
+							left: 33px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.style-line {
+		li:after {
+			width: 15px;
+			height: 2px;
+			border-radius: 0;
+			top: 22px;
+		}
+	}
+
+	&.simple {
+		li {
+			padding-left: 0;
+		}
+		li:after {
+			display: none;
+		}
+	}
+
+	&.border {
+		li {
+			padding: 13px 0 12px 30px;
+			border-bottom: 1px solid $color_border;
+		}
+
+		li:first-child {
+			border-top: 1px solid $color_border;
+		}
+	}
+
+	&.offset {
+		li {
+			padding-left: 0;
+			margin-left: 30px;
+
+			&:after,
+			.icon {
+				left: -30px;
+			}
+		}
+	}
+
+	&.with-icon {
+		li {
+			padding: 10px 0 9px;
+
+			&:after {
+				display: none;
+			}
+
+			.wrap {
+				width: 100%;
+				display: flex;
+
+				.col {
+					vertical-align: middle;
+
+					&.col-icon {
+						vertical-align: top;
+					}
+				}
+
+				.col-title {
+					margin-left: 10px;
+				}
+			}
+
+			h4,
+			.icon,
+			img {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 10px;
+			}
+
+			.icon,
+			img {
+				vertical-align: top;
+				font-size: 21px;
+				line-height: 1;
+
+				&:before {
+					line-height: inherit;
+					vertical-align: middle;
+					display: block;
+				}
+			}
+		}
+
+		&.border li {
+			padding: 11px 0 12px 0;
+		}
+
+		&.offset {
+			li {
+				border-width: 0px;
+				padding: 0;
+
+				.col {
+					padding: 12px 0 11px;
+				}
+
+				.wrap, .col {
+				}
+
+				.col-title {
+					border-bottom: 1px solid $color_border;
+				}
+
+				&:first-child {
+					.col-title {
+						border-top: 1px solid $color_border;
+					}
+				}
+			}
+		}
+	}
+
+	&.icon-fill {
+		li {
+			padding: 5px 0 5px;
+			margin-left: 0;
+
+			.icon {
+				background: $color_brand;
+				width: 30px;
+				height: 30px;
+				margin-right: 15px;
+				line-height: 30px;
+				font-size: 18px;
+				text-align: center;
+				color: #fff;
+				top: 7px;
+
+				&:before {
+					vertical-align: middle;
+				}
+			}
+		}
+
+		&.border li {
+			padding: 6px 0 8px 0;
+		}
+
+		&.offset li {
+			padding: 0;
+
+			.col {
+				padding: 8px 0 7px;
+			}
+		}
+	}
+}

@@ -1,0 +1,881 @@
+{
+    "key": "group_592fd650bf099",
+    "title": "Portfolio Settings",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_591b002d4818cffmod",
+            "label": "Portfolio Layout",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5937e0a52b48ce86od152",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p class=\"message\"><span class=\"icon ion-information-circled\"></span> <b>Note:</b> to find more porfolio options navigate to global settings <b>Theme Settings > Portfolio Settings</b></p>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+         {
+            "key": "field_592fd651216b4",
+            "label": "Portfolio layout",
+            "name": "portfolio_item_layout_type",
+            "type": "image_option",
+            "instructions": "Choose layout type for portfolio items",
+            "conditional_logic": 0,
+            "default_value": "inherit",
+            "image_option_value": [
+                {
+                    "name": "inherit",
+                    "description": "Theme settings inherited",
+                    "src": "acf__image_inherited.svg" 
+                },
+                {
+                    "name": "grid_1",
+                    "description": "Image Grid",
+                    "src": "nor__listing_18.svg"
+                },
+                {
+                    "name": "grid_2",
+                    "description": "Classic Grid",
+                    "src": "nor__listing_17.svg" 
+                },
+                {
+                    "name": "grid_4",
+                    "description": "Fullscreen Carousel",
+                    "src": "nor__listing_15.svg" 
+                },
+                {
+                    "name": "grid_5",
+                    "description": "Split Screen",
+                    "src": "nor__listing_14.svg" 
+                },
+                {
+                    "name": "grid_6",
+                    "description": "Classic Carousel",
+                    "src": "nor__listing_16.svg"
+                },
+                {
+                    "name": "grid_7",
+                    "description": "Slider with Vertical Scroll",
+                    "src": "nor__listing_13.svg" 
+                },
+                {
+                    "name": "grid_8",
+                    "description": "Slider with Horizontal Scroll",
+                    "src": "nor__listing_12.svg" 
+                }
+            ]
+        },
+        {
+            "key": "field_512341234sdfg34234",
+            "label": "Hover effect",
+            "name": "portfolio_grid_1_hover",
+            "type": "image_option",
+            "instructions": "Choose layout type for portfolio items",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "==",
+                        "value": "grid_1"
+                    }
+                ]
+            ],
+            "image_option_value": [
+                {
+                    "name": "inherit",
+                    "description": "Theme settings inherited",
+                    "src": "acf__image_inherited.svg" 
+                },
+                {
+                    "name": "hover_1",
+                    "description": "Centered Details",
+                    "src": "nor__listing_18.1.svg" 
+                },
+                {
+                    "name": "hover_2",
+                    "description": "Side Details",
+                    "src": "nor__listing_18.2.svg"
+                },
+                {
+                    "name": "hover_3",
+                    "description": "Bottom Details",
+                    "src": "nor__listing_18.3.svg" 
+                }
+            ],
+            "default_value": "inherit"
+        },
+        {
+            "key": "field_59fa4asdfhgerw4412345",
+            "label": "Hover effect",
+            "name": "portfolio_grid_2_hover",
+            "type": "image_option",
+            "instructions": "Choose layout type for portfolio items",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "==",
+                        "value": "grid_2"
+                    }
+                ]
+            ],
+            "image_option_value": [
+                {
+                    "name": "inherit",
+                    "description": "Theme settings inherited",
+                    "src": "acf__image_inherited.svg" 
+                },
+                {
+                    "name": "hover_1",
+                    "description": "Image Opacity",
+                    "src": "nor__listing_17.1.svg" 
+                },
+                {
+                    "name": "hover_2",
+                    "description": "Overlay Button",
+                    "src": "nor__listing_17.2.svg" 
+                },
+                {
+                    "name": "hover_3",
+                    "description": "Overlay Link",
+                    "src": "nor__listing_17.3.svg" 
+                }
+            ],
+            "default_value": "inherit"
+        },
+        {
+            "key": "field_59fb43123sdfg435",
+            "label": "Mouse wheel",
+            "name": "portfolio_mousewheel",
+            "type": "true_false",
+            "instructions": "Choose hover effect for portfolio items",
+            "ui": true,
+            "default_value": true,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "!=",
+                        "value": "grid_1"
+                    },
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "!=",
+                        "value": "grid_2"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "field_59fb431234324324",
+            "label": "Slider loop",
+            "name": "portfolio_sliderloop",
+            "type": "true_false",
+            "instructions": "Choose loop for portfolio items",
+            "ui": true,
+            "default_value": false,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "!=",
+                        "value": "grid_1"
+                    },
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "!=",
+                        "value": "grid_2"
+                    },
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "!=",
+                        "value": "grid_3"
+                    },
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "!=",
+                        "value": "grid_5"
+                    },
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "!=",
+                        "value": "grid_7"
+                    },
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "!=",
+                        "value": "grid_8"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "field_592fd65121a9b",
+            "label": "Grid spacing",
+            "name": "portfolio_items_without_padding",
+            "type": "radio",
+            "instructions": "Remove spacing between grid items",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": ["inherit"],
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592fd65120ece",
+            "label": "Portfolio items per row",
+            "name": "portfolio_columns_in_row",
+            "type": "norebro_columns",
+            "instructions": "Choose number of portfolio items per row",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "i-i-i-i",
+            "use_inherit": true
+        },
+        {
+            "key": "field_592d60af8a7ffmo6467ds",
+            "label": "Grid animation",
+            "name": "portfolio_animation_type",
+            "type": "radio",
+            "instructions": "Choose grid animation type",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "default": "Without animation",
+                "sync": "Sync animation",
+                "async": "Async animation"
+            },
+            "default_value": ["inherit"],
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592d60af8ac17d27mo646ds",
+            "label": "Grid animation effect",
+            "name": "portfolio_animation_effect",
+            "type": "select",
+            "instructions": "Choose portfolio items appear effect",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "fade-up": "Fade up",
+                "fade-down": "Fade down",
+                "fade-right": "Fade right",
+                "fade-left": "Fade left",
+                "flip-up": "Flip up",
+                "flip-down": "Flip down",
+                "zoom-in": "Zoom in",
+                "zoom-out": "Zoom out"
+            },
+            "default_value": [
+                "inherit"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59fb431234324324",
+            "label": "Loop mode",
+            "name": "portfolio_sliderloop",
+            "type": "true_false",
+            "instructions": "Enable loop sliding for portfolio items",
+            "ui": true,
+            "default_value": false
+        },
+        {
+            "key": "field_592fd65121a9b",
+            "label": "Grid spacing",
+            "name": "portfolio_items_without_padding",
+            "type": "radio",
+            "instructions": "Remove spacing between grid items",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": ["inherit"],
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_591b002d4819cffmod",
+            "label": "Portfolio Page",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_592fd651222a5",
+            "label": "Category filter",
+            "name": "project_show_filter",
+            "type": "radio",
+            "instructions": "Show category filter on portfolio page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "show": "Show",
+                "hide": "Hide"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592fd651222a5_tcol",
+            "label": "Category filter text color",
+            "name": "project_filter_text_color",
+            "type": "norebro_color",
+            "instructions": "Choose category filter text color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd651222a5",
+                        "operator": "!=",
+                        "value": "hide"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_592fd651222a5_acol",
+            "label": "Category filter accent color",
+            "name": "project_filter_accent_color",
+            "type": "norebro_color",
+            "instructions": "Choose category filter accent color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd651222a5",
+                        "operator": "!=",
+                        "value": "hide"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_592fd6512267d",
+            "label": "Category filter position",
+            "name": "portfolio_filter_align",
+            "type": "select",
+            "instructions": "Choose category filter position for portfolio page",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd651222a5",
+                        "operator": "!=",
+                        "value": "hide"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "left": "Left",
+                "center": "Center",
+                "right": "Right"
+            },
+            "default_value": [
+                "inherit"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_592fd651212c8",
+            "label": "Portfolio items per page",
+            "name": "portfolio_projects_per_page",
+            "type": "number",
+            "instructions": "Choose number of portfolio items per page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placeholder": "",
+            "prepend": "",
+            "append": "projects",
+            "min": 1,
+            "max": 250,
+            "step": 1
+        },
+        {
+            "key": "field_592fd65121624",
+            "label": "Pagination",
+            "name": "portfolio_pagination_type",
+            "type": "select",
+            "instructions": "Choose pagination type for portfolio page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "simple": "Simple",
+                "lazy_scroll": "Lazy load",
+                "lazy_button": "Load more button"
+            },
+            "default_value": [
+                "inherit"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59fb4334bgd33615",
+            "label": "Pagination position",
+            "name": "portfolio_pagination_position",
+            "type": "select",
+            "instructions": "Choose pagination position for portfolio page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "left": "Left",
+                "center": "Center",
+                "right": "Right"
+            },
+            "default_value": [
+                "inherit"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_592fd651222a2",
+            "label": "Show slider pagination",
+            "name": "project_show_slider_pagination",
+            "type": "true_false",
+            "instructions": "Show pagination for slider projects items",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "!=",
+                        "value": "grid_1"
+                    },
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "!=",
+                        "value": "grid_2"
+                    },
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "!=",
+                        "value": "grid_6"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_592fd651216b3",
+            "label": "Slider pagination type",
+            "name": "portfolio_slider_pagination_type",
+            "type": "select",
+            "instructions": "Choose type pagination for your projects",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd651222a2",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "!=",
+                        "value": "grid_1"
+                    },
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "!=",
+                        "value": "grid_2"
+                    },
+                    {
+                        "field": "field_592fd651216b4",
+                        "operator": "!=",
+                        "value": "grid_6"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "numbers": "Numbers",
+                "dots": "Dots"
+            },
+            "default_value": [
+                "numbers"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_591b002d4318cffmod",
+            "label": "Lightbox",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_592fd65122a68",
+            "label": "Lightbox preview",
+            "name": "portfolio_projects_in_popup",
+            "type": "radio",
+            "instructions": "Enable lightbox preview for portfolio project",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "enable": "Enable",
+                "disable": "Disable"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "masonry",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59fb4ad3ds7d33615",
+            "label": "Project description",
+            "name": "portfolio_gallery_description",
+            "type": "radio",
+            "instructions": "Hide portfolio description from lightbox",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd65122a68",
+                        "operator": "!=",
+                        "value": "disable"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Yes",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "masonry",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59fb4adsd223466d33615",
+            "label": "Project details",
+            "name": "portfolio_gallery_details",
+            "type": "radio",
+            "instructions": "Hide portfolio details from lightbox",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd65122a68",
+                        "operator": "!=",
+                        "value": "disable"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Yes",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "masonry",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592fd65122a67",
+            "label": "Project link",
+            "name": "portfolio_projects_hide_view_link_in_popup",
+            "type": "radio",
+            "instructions": "Hide <em>\"View project\"</em> link from lightbox",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd65122a68",
+                        "operator": "!=",
+                        "value": "disable"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Yes",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "masonry",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592fd65122a69",
+            "label": "Auto scrolling",
+            "name": "portfolio_projects_popup_gallery_autoplay",
+            "type": "radio",
+            "instructions": "Enable auto scrolling for lightbox carousel",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd65122a68",
+                        "operator": "!=",
+                        "value": "disable"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "enable": "Enable",
+                "disable": "Disable"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "masonry",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592fd65122a6a",
+            "label": "Auto scrolling interval",
+            "name": "portfolio_projects_popup_gallery_autoplay_time",
+            "type": "number",
+            "instructions": "Autoplay interval timeout in seconds",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd65122a68",
+                        "operator": "!=",
+                        "value": "disable"
+                    },
+                    {
+                        "field": "field_592fd65122a69",
+                        "operator": "!=",
+                        "value": "disable"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "append": "seconds",
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/page_for-projects.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

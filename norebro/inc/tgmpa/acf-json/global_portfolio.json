@@ -1,0 +1,2246 @@
+{
+    "key": "group_592fd665c6552",
+    "title": "Protfolio Project",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_592fe6046937d",
+            "label": "Portfolio Layout",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5937e0a52b48cexmod155",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p class=\"message\"><span class=\"icon ion-information-circled\"></span> <b>Note:</b> these settings apply to all portfolio elements of your website. You can override some global setting for individual portfolio pages.</p>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59fa4344b383615",
+            "label": "Portfolio layout",
+            "name": "global_portfolio_layout",
+            "type": "image_option",
+            "instructions": "Choose layout type for portfolio items",
+            "conditional_logic": 0,
+            "default_value": "grid_1",
+            "image_option_value": [
+                {
+                    "name": "grid_1",
+                    "description": "Image Grid",
+                    "src": "nor__listing_18.svg"
+                },
+                {
+                    "name": "grid_2",
+                    "description": "Classic Grid",
+                    "src": "nor__listing_17.svg"
+                },
+                {
+                    "name": "grid_4",
+                    "description": "Fullscreen Carousel",
+                    "src": "nor__listing_15.svg"
+                },
+                {
+                    "name": "grid_5",
+                    "description": "Split Screen",
+                    "src": "nor__listing_14.svg"
+                },
+                {
+                    "name": "grid_6",
+                    "description": "Classic Carousel",
+                    "src": "nor__listing_16.svg"
+                },
+                {
+                    "name": "grid_7",
+                    "description": "Slider with Vertical Scroll",
+                    "src": "nor__listing_13.svg"
+                },
+                {
+                    "name": "grid_8",
+                    "description": "Slider with Horizontal Scroll",
+                    "src": "nor__listing_12.svg"
+                }
+            ]
+        },
+        {
+            "key": "field_512341234234234",
+            "label": "Hover effect",
+            "name": "global_portfolio_grid_1_hover",
+            "type": "image_option",
+            "instructions": "Choose hover layout for portfolio items",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59fa4344b383615",
+                        "operator": "==",
+                        "value": "grid_1"
+                    }
+                ]
+            ],
+            "image_option_value": [
+                {
+                    "name": "hover_1",
+                    "description": "Centered Details",
+                    "src": "nor__listing_18.1.svg"
+                },
+                {
+                    "name": "hover_2",
+                    "description": "Side Details",
+                    "src": "nor__listing_18.2.svg"
+                },
+                {
+                    "name": "hover_3",
+                    "description": "Bottom Details",
+                    "src": "nor__listing_18.3.svg"
+                }
+            ]
+        },
+        {
+            "key": "field_59fa41123412345",
+            "label": "Hover effect",
+            "name": "global_portfolio_grid_2_hover",
+            "type": "image_option",
+            "instructions": "Choose layout type for portfolio items",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59fa4344b383615",
+                        "operator": "==",
+                        "value": "grid_2"
+                    }
+                ]
+            ],
+            "image_option_value": [
+                {
+                    "name": "hover_1",
+                    "description": "Image Opacity",
+                    "src": "nor__listing_17.1.svg"
+                },
+                {
+                    "name": "hover_2",
+                    "description": "Overlay Button",
+                    "src": "nor__listing_17.2.svg"
+                },
+                {
+                    "name": "hover_3",
+                    "description": "Overlay Link",
+                    "src": "nor__listing_17.3.svg"
+                }
+            ]
+        },
+        {
+            "key": "field_592fd66v12ffaqwba22c",
+            "label": "Grid image size",
+            "name": "global_portfolio_images_size",
+            "type": "select",
+            "instructions": "Choose image size for portfolio items",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "thumbnail": "Thumbnail",
+                "medium": "Small",
+                "medium_large": "Medium",
+                "large": "Large",
+                "full": "Original"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "medium_large",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59fb4313b343615",
+            "label": "Portfolio items per row",
+            "name": "global_portfolio_columns_in_row",
+            "type": "norebro_columns",
+            "instructions": "Choose number of portfolio items per row",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "4-3-2-1"
+        },
+        {
+            "key": "field_59fb4312b343615",
+            "label": "Grid animation",
+            "name": "global_portfolio_animation_type",
+            "type": "radio",
+            "instructions": "Choose grid animation type",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Without animation",
+                "sync": "Sync animation",
+                "async": "Async animation"
+            },
+            "default_value": ["default"],
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59fb4332b343615",
+            "label": "Grid animation effect",
+            "name": "global_portfolio_animation_effect",
+            "type": "select",
+            "instructions": "Choose portfolio items appear effect",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fade-up": "Fade up",
+                "fade-down": "Fade down",
+                "fade-right": "Fade right",
+                "fade-left": "Fade left",
+                "flip-up": "Flip up",
+                "flip-down": "Flip down",
+                "zoom-in": "Zoom in",
+                "zoom-out": "Zoom out"
+            },
+            "default_value": [
+                "fade-up"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59fb4312383615",
+            "label": "Category visible",
+            "name": "global_portfolio_page_category",
+            "type": "true_false",
+            "instructions": "Show category label on portfolio items",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5939023234234d98",
+            "label": "Category color",
+            "name": "global_portfolio_page_category_color",
+            "type": "norebro_color",
+            "instructions": "Choose category text color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59fb4312383615",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59397890834d98",
+            "label": "Category background color",
+            "name": "global_portfolio_page_category_bg_color",
+            "type": "norebro_color",
+            "instructions": "Choose category label background color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59fb4312383615",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59390234233d98",
+            "label": "Title color",
+            "name": "global_portfolio_page_title_color",
+            "type": "norebro_color",
+            "instructions": "Choose title text color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59fb4234383615",
+            "label": "Description visible",
+            "name": "global_portfolio_page_description",
+            "type": "true_false",
+            "instructions": "Show description on portfolio items",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_593902342343d98",
+            "label": "Description color",
+            "name": "global_portfolio_page_description_color",
+            "type": "norebro_color",
+            "instructions": "Choose description text color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59fb4234383615",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59f234234383615",
+            "label": "Project link visible",
+            "name": "global_portfolio_page_more",
+            "type": "true_false",
+            "instructions": "Show \"View project\" link on portfolio items",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59392342562343d98",
+            "label": "Project link color",
+            "name": "global_portfolio_page_more_color",
+            "type": "norebro_color",
+            "instructions": "Choose project link text color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59f234234383615",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59f2376867383615",
+            "label": "Project counter visible",
+            "name": "global_portfolio_page_numbers",
+            "type": "true_false",
+            "instructions": "Show project counter on portfolio items <em>| Used only in some types of portfolio layout</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59392342238658",
+            "label": "Project counter",
+            "name": "global_portfolio_page_numbers_color",
+            "type": "norebro_color",
+            "instructions": "Choose project counter text color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59f2376867383615",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59f2342342383615",
+            "label": "Date visible",
+            "name": "global_portfolio_page_date",
+            "type": "true_false",
+            "instructions": "Show date on portfolio items <em>| Used only in some types of portfolio layout</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5939237562343d98",
+            "label": "Date color",
+            "name": "global_portfolio_page_date_color",
+            "type": "norebro_color",
+            "instructions": "Choose date text color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59f2342342383615",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59392398832343d98",
+            "label": "Overlay color",
+            "name": "global_portfolio_page_overlay_color",
+            "type": "norebro_color",
+            "instructions": "Choose overlay background color"
+        },
+        {
+            "key": "field_59392323423423523",
+            "label": "Background color",
+            "name": "global_portfolio_page_background_color",
+            "type": "norebro_color",
+            "instructions": "Choose background color"
+        },
+        {
+            "key": "field_59fb4313b383615",
+            "label": "Grid spacing",
+            "name": "global_portfolio_items_without_padding",
+            "type": "true_false",
+            "instructions": "Remove spacing between grid items",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_592fe4346937d",
+            "label": "Portfolio Page",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_592fd666241be",
+            "label": "Portfolio page",
+            "name": "global_portfolio_page",
+            "type": "page_link",
+            "instructions": "Choose page for all portfolio projects",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [
+
+            ],
+            "allow_null": 0,
+            "allow_archives": 0,
+            "multiple": 0
+        },
+        {
+            "key": "field_592fd66622e2c",
+            "label": "Breadcrumbs visibility",
+            "name": "global_project_hide_breadcrumbs",
+            "type": "radio",
+            "instructions": "Hide breadcrumbs from portfolio pages?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme page settings inherited",
+                "yes": "Hide",
+                "no": "Show"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592fd66622e2f",
+            "label": "Breadcrumbs slug",
+            "name": "global_project_breadcrumb_slug",
+            "type": "text",
+            "instructions": "Enter custom text for breadcrumbs slug",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "Portfolio",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592fd66vba22c",
+            "label": "Custom content position",
+            "name": "global_portfolio_content_position",
+            "type": "select",
+            "instructions": "Choose WPBakery Page Builder page content position",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "top": "Top - Before portfolio",
+                "bottom": "Bottom - After portfolio"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59fb4334b343615",
+            "label": "Category filter",
+            "name": "global_project_show_filter",
+            "type": "true_false",
+            "instructions": "Show category filter on portfolio pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59fb43341343615",
+            "label": "Category filter text color",
+            "name": "global_project_filter_text_color",
+            "type": "norebro_color",
+            "instructions": "Choose category filter text color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59fb4334b343615",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59fb43342343615",
+            "label": "Category filter accent color",
+            "name": "global_project_filter_accent_color",
+            "type": "norebro_color",
+            "instructions": "Choose category filter accent color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59fb4334b343615",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59fb4334b433615",
+            "label": "Category filter position",
+            "name": "global_portfolio_filter_align",
+            "type": "select",
+            "instructions": "Choose category filter position for portfolio pages",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59fb4334b343615",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Left",
+                "center": "Center",
+                "right": "Right"
+            },
+            "default_value": [
+                "center"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59fb4334a433615",
+            "label": "Portfolio items per page",
+            "name": "global_portfolio_projects_per_page",
+            "type": "number",
+            "instructions": "Choose number of portfolio items per page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 12,
+            "placeholder": "",
+            "prepend": "",
+            "append": "projects",
+            "min": 1,
+            "max": 250,
+            "step": 1
+        },
+        {
+            "key": "field_59fb4334fd33615",
+            "label": "Pagination",
+            "name": "global_portfolio_pagination_type",
+            "type": "select",
+            "instructions": "Choose pagination type for portfolio page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "simple": "Simple",
+                "lazy_scroll": "Lazy load",
+                "lazy_button": "Load more button"
+            },
+            "default_value": [
+                "simple"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59fb4334bgdasdf33615",
+            "label": "Pagination position",
+            "name": "global_portfolio_pagination_position",
+            "type": "select",
+            "instructions": "Choose pagination position for portfolio page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Left",
+                "center": "Center",
+                "right": "Right"
+            },
+            "default_value": [
+                "left"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59fb4432b343615",
+            "label": "Sidebar",
+            "name": "global_portfolio_page_sidebar",
+            "type": "select",
+            "instructions": "Choose sidebar position for portfolio pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "without": "Without sidebar",
+                "right": "Right",
+                "left": "Left"
+            },
+            "default_value": [
+                "inherit"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_592fe44346937d",
+            "label": "Project Page",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_592fd6662265c",
+            "label": "Single project layout",
+            "name": "global_project_layout_type",
+            "type": "image_option",
+            "instructions": "Choose layout type for project pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "image_option_value": [
+                {
+                    "name": "type_2",
+                    "description": "Classic with Right Image",
+                    "src": "nor__listing_24.svg"
+                },
+                {
+                    "name": "type_8",
+                    "description": "Classic with Left Image",
+                    "src": "nor__listing_25.svg"
+                },
+                {
+                    "name": "type_1",
+                    "description": "Fullscreen Details",
+                    "src": "nor__listing_23.svg"
+                },
+                {
+                    "name": "type_3",
+                    "description": "Split Screen Right Image",
+                    "src": "nor__listing_26.svg"
+                },
+                {
+                    "name": "type_9",
+                    "description": "Split Screen Left Image",
+                    "src": "nor__listing_27.svg"
+                },
+                {
+                    "name": "type_4",
+                    "description": "Carousel Gallery",
+                    "src": "nor__listing_28.svg"
+                },
+                {
+                    "name": "type_5",
+                    "description": "Light Details Intro",
+                    "src": "nor__listing_29.svg"
+                },
+                {
+                    "name": "type_6",
+                    "description": "Dark Details Intro",
+                    "src": "nor__listing_30.svg"
+                },
+                {
+                    "name": "type_7",
+                    "description": "Fullscreen Slider",
+                    "src": "nor__listing_31.svg"
+                }
+            ],
+            "default_value": "type_2"
+        },
+        {
+            "key": "field_59fb4334bgdf3615",
+            "label": "Content wrapper",
+            "name": "global_project_page_is_wrapped",
+            "type": "radio",
+            "instructions": "Add content wrapper to project pages",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb03738",
+                        "operator": "!=",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "With wrapper",
+                "no": "Without wrapper"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_591ac519d31f3",
+            "label": "Content wrapper width",
+            "name": "global_project_content_wrapper_width",
+            "type": "text",
+            "instructions": "Define container wrapper width <em>| Use CSS-units (1326px is default)</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 200
+        },
+        {
+            "key": "field_591b10dbb4a85234e3453",
+            "label": "Full width wrapper side margins",
+            "name": "global_project_full_width_margins_size",
+            "type": "text",
+            "instructions": "Define side margins for full-width page container <em>| Use CSS-units (7% is default)</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 200
+        },
+        {
+            "key": "field_59fb433fbgd33615",
+            "label": "Boxed page layout",
+            "name": "global_project_page_use_boxed_wrapper",
+            "type": "radio",
+            "instructions": "Wrap all project pages in boxed container",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Yes",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59fb4334asdd33615",
+            "label": "Content padding",
+            "name": "global_project_page_add_top_padding",
+            "type": "radio",
+            "instructions": "Add top and bottom padding for project page content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Add",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592fd66622a31",
+            "label": "Navigation",
+            "name": "global_project_show_navigation",
+            "type": "radio",
+            "instructions": "Choose portfolio navigation type",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "Without navigation",
+                "prev_n_next": "Next and preview"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "none",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592fd66622a31amod",
+            "label": "Navigation position",
+            "name": "global_project_navigation_position",
+            "type": "radio",
+            "instructions": "Choose portfolio navigation position",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd66622a31",
+                        "operator": "==",
+                        "value": "prev_n_next"
+                    },
+                    {
+                        "field": "field_592fd6662265c",
+                        "operator": "!=",
+                        "value": "type_7"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "top": "Top. Before content",
+                "bottom": "Bottom. After content"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "bottom",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592fd66622a41amodbgg",
+            "label": "Custom content position",
+            "name": "global_project_custom_content_position",
+            "type": "select",
+            "instructions": "Choose custom content position",
+            "required": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "top": "Top. Before content",
+                "after_description": "Center. After description",
+                "bottom": "Bottom. After content"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "top",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5937a1a521s81ebmod23",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<h9>Page Settings</h9>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+
+
+
+
+        {
+            "key": "field_593923440171e",
+            "label": "Background type",
+            "name": "global_project_page_background_type",
+            "type": "radio",
+            "instructions": "Choose background type for project page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "custom": "Custom image",
+                "color": "Custom color"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5939023423b57",
+            "label": "Background image",
+            "name": "global_project_page_background_image",
+            "type": "image",
+            "instructions": "Custom background image",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593923440171e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5939asdfasdf1f80",
+            "label": "Background image size",
+            "name": "global_project_page_background_size",
+            "type": "select",
+            "instructions": "Choose background image size type",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593923440171e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "auto": "Auto",
+                "cover": "Cover",
+                "contain": "Contain",
+                "100per": "100% 100%"
+            },
+            "default_value": [
+                "auto"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59390de23342387",
+            "label": "Background image position",
+            "name": "global_project_page_background_position",
+            "type": "select",
+            "instructions": "Choose background image position",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5939asdfasdf1f80",
+                        "operator": "==",
+                        "value": "auto"
+                    },
+                    {
+                        "field": "field_593923440171e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5939asdfasdf1f80",
+                        "operator": "==",
+                        "value": "contain"
+                    },
+                    {
+                        "field": "field_593923440171e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "center": "Center",
+                "left_top": "Left top",
+                "left_center": "Left center",
+                "left_bottom": "Left bottom",
+                "center_top": "Center top",
+                "center_bottom": "Center bottom",
+                "right_top": "Right top",
+                "right_center": "Right center",
+                "right_bottom": "Right bottom"
+            },
+            "default_value": [
+
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_593923b02758",
+            "label": "Background image repeat",
+            "name": "global_project_page_background_repeat",
+            "type": "select",
+            "instructions": "Choose background image repeat type",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5939asdfasdf1f80",
+                        "operator": "==",
+                        "value": "auto"
+                    },
+                    {
+                        "field": "field_593923440171e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5939asdfasdf1f80",
+                        "operator": "==",
+                        "value": "contain"
+                    },
+                    {
+                        "field": "field_593923440171e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "repeat": "Repeat",
+                "no_repeat": "No repeat",
+                "repeat_y": "Repeat only by Y",
+                "repeat_x": "Repeat only by X"
+            },
+            "default_value": [
+
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59390asd02b58",
+            "label": "Background attachment",
+            "name": "global_project_page_background_is_attached",
+            "type": "true_false",
+            "instructions": "You can fix background image on this page",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593923440171e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_59390d23402f35",
+            "label": "Background color",
+            "name": "global_project_page_background_color",
+            "type": "norebro_color",
+            "instructions": "Custom background color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+
+
+
+        {
+            "key": "field_592f4a166937e",
+            "label": "Lightbox",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59fb44344asdd33615",
+            "label": "Lightbox preview",
+            "name": "global_portfolio_projects_in_popup",
+            "type": "true_false",
+            "instructions": "Enable lightbox preview for portfolio project",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "ui": 1,
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_592fd66623dd8",
+            "label": "Lightbox skin",
+            "name": "global_portfolio_gallery_light",
+            "type": "radio",
+            "instructions": "Choose skin for lightbox preview",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "dark": "Dark",
+                "light": "Light"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "dark",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59fb4ad44567d33615",
+            "label": "Project description",
+            "name": "global_portfolio_gallery_description",
+            "type": "true_false",
+            "instructions": "Hide portfolio description from lightbox",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "ui": 1,
+            "default_value": 0,
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59fb4ad44566d33615",
+            "label": "Project details",
+            "name": "global_portfolio_gallery_details",
+            "type": "true_false",
+            "instructions": "Hide portfolio details from lightbox",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "ui": 1,
+            "default_value": 0,
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59fb4ad44asdtd33615",
+            "label": "Project link",
+            "name": "global_portfolio_gallery_link",
+            "type": "true_false",
+            "instructions": "Hide <em>\"View project\"</em> link from lightbox",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "ui": 1,
+            "default_value": 0,
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59fb4ad44a1dtd33615",
+            "label": "Project link text",
+            "name": "global_portfolio_gallery_link_text",
+            "type": "text",
+            "instructions": "Enter custome text for project link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "View Project",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59fb4ad44asdd33615",
+            "label": "Auto scrolling",
+            "name": "global_portfolio_gallery_autoplay",
+            "type": "true_false",
+            "instructions": "Enable auto scrolling for lightbox carousel",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "ui": 1,
+            "default_value": 0,
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59fb4ad44afsdd33615",
+            "label": "Auto scrolling interval",
+            "name": "global_portfolio_gallery_autoplay_time",
+            "type": "number",
+            "instructions": "Autoplay interval timeout in seconds",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 5,
+            "append": "seconds",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_592fe6166937e",
+            "label": "Header Title",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5931067c175b5",
+            "label": "Visibility",
+            "name": "global_project_header_use_hero",
+            "type": "radio",
+            "instructions": "Hide header title from project pages?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme page settings inherited",
+                "yes": "Yes",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59310b5b35a20",
+            "label": "Height settings",
+            "name": "global_project_header_title_height_settings",
+            "type": "radio",
+            "instructions": "Choose height type for header title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme page settings inherited",
+                "custom": "Custom settings"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_593105ee5d7af",
+            "label": "Height",
+            "name": "global_project_header_height",
+            "type": "norebro_responsive_height",
+            "instructions": "Set up header title height",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59310b5b35a20",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_593105d65d7ae",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_593105d65d7ae",
+            "label": "Fullscreen height",
+            "name": "global_project_title_height_fullscreen",
+            "type": "true_false",
+            "instructions": "Enable fullscreen height for header title?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_593102f7b99f7",
+            "label": "Content position",
+            "name": "global_portfolio_header_title_align",
+            "type": "select",
+            "instructions": "Choose header title content position for project pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme pages settings inherited",
+                "left": "Left",
+                "center": "Center",
+                "right": "Right"
+            },
+            "default_value": [
+                "inherit"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_592fe6df9bea5",
+            "label": "Background type",
+            "name": "global_portfolio_header_title_type",
+            "type": "select",
+            "instructions": "Choose background type for header title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme page settings inherited",
+                "color": "Custom background color",
+                "custom": "Custom loaded image"
+            },
+            "default_value": [
+                "inherit"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_592fe7d7fe779",
+            "label": "Background color",
+            "name": "global_portfolio_title_background_color",
+            "type": "norebro_color",
+            "instructions": "Choose background color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "!=",
+                        "value": "inherit"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_592fe81e4e6d1",
+            "label": "Background image",
+            "name": "global_portfolio_title_background_image",
+            "type": "image",
+            "instructions": "Upload background image for header title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_593019c8e452c",
+            "label": "Background image size",
+            "name": "global_portfolio_title_background_size",
+            "type": "select",
+            "instructions": "Choose background image size type",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "auto": "Auto",
+                "cover": "Cover",
+                "contain": "Contain",
+                "100per": "100% 100%"
+            },
+            "default_value": [
+                "cover"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_593025e5dbc6f",
+            "label": "Background image position",
+            "name": "global_portfolio_title_background_position",
+            "type": "select",
+            "instructions": "Choose background image position",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "==",
+                        "value": "inherit"
+                    },
+                    {
+                        "field": "field_593019c8e452c",
+                        "operator": "==",
+                        "value": "auto"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "==",
+                        "value": "inherit"
+                    },
+                    {
+                        "field": "field_593019c8e452c",
+                        "operator": "==",
+                        "value": "contain"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_593019c8e452c",
+                        "operator": "==",
+                        "value": "auto"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_593019c8e452c",
+                        "operator": "==",
+                        "value": "contain"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "center": "Center",
+                "left_top": "Left top",
+                "left_center": "Left center",
+                "left_bottom": "Left bottom",
+                "center_top": "Center top",
+                "center_bottom": "Center bottom",
+                "right_top": "Right top",
+                "right_center": "Right center",
+                "right_bottom": "Right bottom"
+            },
+            "default_value": [
+                "center"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5930285d3f1ff",
+            "label": "Background image repeat",
+            "name": "global_portfolio_title_background_repeat",
+            "type": "select",
+            "instructions": "Choose background image repeat type",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "==",
+                        "value": "inherit"
+                    },
+                    {
+                        "field": "field_593019c8e452c",
+                        "operator": "==",
+                        "value": "auto"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "==",
+                        "value": "inherit"
+                    },
+                    {
+                        "field": "field_593019c8e452c",
+                        "operator": "==",
+                        "value": "contain"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_593019c8e452c",
+                        "operator": "==",
+                        "value": "auto"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_593019c8e452c",
+                        "operator": "==",
+                        "value": "contain"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "repeat": "Repeat",
+                "no_repeat": "No repeat",
+                "repeat_y": "Repeat only by Y",
+                "repeat_x": "Repeat only by X"
+            },
+            "default_value": [
+                "repeat"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_593029f1e5302",
+            "label": "Background overlay",
+            "name": "global_portfolio_use_title_overlay",
+            "type": "radio",
+            "instructions": "Add colored overlay over background image?",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "==",
+                        "value": "inherit"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme page settings inherited",
+                "yes": "Yes",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59302aa9e5304",
+            "label": "Background overlay color",
+            "name": "global_portfolio_title_background_overlay_color",
+            "type": "norebro_color",
+            "instructions": "Choose background overlay color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "==",
+                        "value": "inherit"
+                    },
+                    {
+                        "field": "field_593029f1e5302",
+                        "operator": "!=",
+                        "value": "no"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_592fe6df9bea5",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_593029f1e5302",
+                        "operator": "!=",
+                        "value": "no"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5931041de1845",
+            "label": "Typography settings",
+            "name": "global_portfolio_typography_settings",
+            "type": "radio",
+            "instructions": "Set up typography for header title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme page settings inherited",
+                "custom": "Custom settings"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_593105045d7ac",
+            "label": "Title settings",
+            "name": "global_project_header_title_typo",
+            "type": "norebro_typo",
+            "instructions": "Set up typograhy for hero titles",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5931041de1845",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "add_theme_inherited": true
+        },
+        {
+            "key": "field_5931058d5d7ad",
+            "label": "Subtitle settings",
+            "name": "global_project_header_subtitle_typo",
+            "type": "norebro_typo",
+            "instructions": "Set up typograhy for subtitles",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5931041de1845",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "add_theme_inherited": true
+        },
+        {
+            "key": "field_592fe61fd937e",
+            "label": "Other Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5936a7a521481ebmod23",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<h9>Sharing Settings</h9>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_592fd666231f2",
+            "label": "Sharing",
+            "name": "global_project_hide_sharing_buttons",
+            "type": "true_false",
+            "instructions": "Disable sharing feature for project pages?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No",
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_592fd666235d9",
+            "label": "Sharing networks",
+            "name": "global_project_social_sharing_buttons",
+            "type": "select",
+            "instructions": "Choose sharing social networks",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd666231f2",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "facebook": "Facebook",
+                "twitter": "Twitter",
+                "pinterest": "Pinterest",
+                "linkedin": "LinkedIn",
+                "vk": "Vkontakte"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 1,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-portfolio"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

@@ -1,0 +1,245 @@
+{
+    "key": "group_59391f245236d",
+    "title": "Portfolio Project Info",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_59391f24594ff",
+            "label": "Description",
+            "name": "project_description",
+            "type": "wysiwyg",
+            "instructions": "Write short description about this project",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_59391f24598db",
+            "label": "Content",
+            "name": "project_content",
+            "type": "gallery",
+            "instructions": "Project gallery. The first image is the main",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "insert": "append",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "png, jpg, jpeg, gif, webp"
+        },
+        {
+            "key": "field_59391f2459ccd",
+            "label": "Date",
+            "name": "project_date",
+            "type": "date_picker",
+            "instructions": "Choose project date",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_59391f245a0b6",
+            "label": "Task",
+            "name": "project_task",
+            "type": "text",
+            "instructions": "Specify which task in front of you were",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59391f245a4b5",
+            "label": "Skills",
+            "name": "project_skills",
+            "type": "text",
+            "instructions": "Skills, techs and tools like <em>Illustration, HTML5 and CSS Animation<\/em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59391f245a893",
+            "label": "Client",
+            "name": "project_client",
+            "type": "text",
+            "instructions": "Your companies clients",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59391f245ac8a",
+            "label": "Project link",
+            "name": "project_link",
+            "type": "url",
+            "instructions": "Link to project preview",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59391f245b478",
+            "label": "Custom fields",
+            "name": "project_custom_fields",
+            "type": "repeater",
+            "instructions": "Create your own list items. For example, <em>Project difficulty<\/em>, <em>Product sort<\/em> or <em>Partners<\/em>.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 6,
+            "layout": "table",
+            "button_label": "+ Add Field",
+            "sub_fields": [
+                {
+                    "key": "field_59391f246d98c",
+                    "label": "Title",
+                    "name": "project_custom_field_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59391f246dd81",
+                    "label": "Value",
+                    "name": "project_custom_field_value",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_59391f245b078",
+            "label": "What should open when clicked?",
+            "name": "project_open_type",
+            "type": "select",
+            "instructions": "Choose opening type for this project",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "project": "This project page",
+                "external_target": "Project site (\"Project link\" field) immediately",
+                "external_blank": "Project site (\"Project link\" field) immediately in new tab"
+            },
+            "default_value": [
+                "project"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "norebro_portfolio"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

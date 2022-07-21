@@ -1,0 +1,64 @@
+$message-box-colors: (
+	'primary': rgba($color_brand, .1),
+	'success': rgba(#3abc83, .15),
+	'warning': rgba(#fe9d5d, .2),
+	'error': rgba(#fe5d5d, .15)
+);
+
+.message-box {
+	background: #f3f3f3;
+	margin: 0;
+	padding: 22px 45px 20px 20px;
+	border: none;
+	font-size: $font_small-size;
+	text-align: left;
+	position: relative;
+	color: $color_dark;
+
+	&.wauto {
+		width: auto;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	&.without-close {
+		padding-right: 20px;
+	}
+
+	&.closed {
+		display: none;
+	}
+
+	a {
+		color: $color_dark;
+		font-weight: 500;
+		margin: 0 6px;
+
+		&:hover {
+			color: $color_dark;
+			opacity: .8;
+			text-decoration: underline;
+		}
+	}
+
+	.close {
+		color: inherit;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		cursor: pointer;
+		font-size: 28px;
+		line-height: 14px;
+		margin-top: -2px;
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+
+	@each $class, $color in $message-box-colors {
+		&.#{$class} {
+			background: $color;
+		}
+	}
+}

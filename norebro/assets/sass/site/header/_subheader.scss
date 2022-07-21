@@ -1,0 +1,51 @@
+.subheader {
+	background: $color_dark;
+	color: rgba(255, 255, 255, 0.6);
+	width: 100%;
+	line-height: 42px;
+	vertical-align: middle;
+	cursor: default;
+	z-index: 50;
+	overflow: hidden;
+	font-size: $font_extra_small-size;
+
+	.page-container {
+		padding: 0 15px;
+
+		&.full {
+			padding: 0 40px;
+		}
+	}
+
+	a {
+		color: rgba(255, 255, 255, 0.6);
+		text-decoration: none;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			display: inline-block;
+		}
+
+		&.left li {
+			margin-right: 15px;
+		}
+		&.right li {
+			margin-left: 15px;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.page-container, .page-container.full {
+			padding: 0 10px;
+		}
+	}
+}

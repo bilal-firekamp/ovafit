@@ -1,0 +1,29 @@
+/**
+* Dropcaps
+*/
+
+.dropcap {
+	background: transparent;
+	width: 22px;
+	height: 24px;
+	margin-right: 4px;
+	display: inline-block;
+	text-align: center;
+	line-height: 26px;
+	vertical-align: middle;
+	font-size: 22px;
+	position: relative;
+	overflow: hidden;
+}
+
+/**
+* Tooltips
+*/
+
+.tooltip {
+	text-decoration: underline;
+}
+
+.tooltip-text {
+	display: none;
+}

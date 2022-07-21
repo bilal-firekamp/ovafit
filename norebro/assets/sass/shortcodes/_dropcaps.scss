@@ -1,0 +1,28 @@
+.dropcap {
+	background: transparent;
+	width: 68px;
+	height: 68px;
+	margin-right: 20px;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	font: 600 40px $font_titles;
+	line-height: 75px;
+	vertical-align: middle;
+	position: relative;
+	overflow: hidden;
+
+	&.outline {
+		border: 1px solid $color_dark;
+	}
+
+	&.flat {
+		color: #fff;
+	}
+
+	&.decorated {
+		border: 2px solid $color_dark;
+		border-bottom: none;
+		border-right: none;
+	}
+}

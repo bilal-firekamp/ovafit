@@ -1,0 +1,88 @@
+.page-sidebar {
+	background: #f7f7f7;
+	width: 28%;
+	float: right;
+	padding: 60px 55px;
+	position: relative;
+	z-index: 10;
+
+	&:after {
+		content: '';
+		background: inherit;
+		width: 500%;
+		height: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+	}
+
+	&.sidebar-right {
+		padding-right: 15px;
+		float: right;
+
+		&:after {
+			left: 100%;
+		}
+	}
+
+	&.sidebar-left {
+		padding-left: 15px;
+		float: left;
+
+		&:after {
+			right: 100%;
+		}
+	}
+
+	.widget:first-child {
+		padding-top: 0;
+
+		> *:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&.sidebar-boxed {
+		&, &.sidebar-right, &.sidebar-left {
+			padding-left: 55px;
+			padding-right: 55px;
+		}
+		&:after {
+			display: none;
+		}
+	}
+
+	&.sidebar-simple {
+		background: transparent;
+
+		&, &.sidebar-right, &.sidebar-left {
+			padding: 15px;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		width: auto;
+		margin: 30px -25px 0;
+		display: block;
+		clear: both;
+
+		& {
+			float: none !important;
+			padding: 30px 25px !important;
+		}
+
+		&:after {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 1024px) and (min-width: 769px) {
+		padding: 25px;
+	}
+}
+
+.page-template-page_for-projects {
+	.page-sidebar {
+		margin-top: 40px;
+	}
+}

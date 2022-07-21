@@ -1,0 +1,409 @@
+
+/*--------------------------------------------------------------
+## Norebro logo widget
+--------------------------------------------------------------*/
+.widget_norebro_widget_logo {
+	a {
+		margin: 0;
+		display: inline-block;
+	}	
+
+	h3 {
+		font-size: 30px;
+		font-weight: 600;
+		line-height: 30px;
+		color: #434343;
+	}
+}
+
+.site-footer {
+	.widget_norebro_widget_logo .theme-logo a {
+		color: $color_footer-border;
+
+		&:hover {
+			color: $color_footer;
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+## Norebro recent posts widget
+--------------------------------------------------------------*/
+.widget_norebro_widget_recent_posts {
+	ul.recent-posts-list {
+		list-style: none;
+		margin: 0;
+
+		li {
+			min-height: 20px;
+			margin-bottom: 15px;
+			position: relative;
+			overflow: hidden;
+
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
+
+		img {
+			width: 70px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		h4 {
+			font-size: $font_small-size;
+			font-weight: 500;
+
+			a:hover {
+				color: $color_brand;
+				text-decoration: underline;
+			}
+		}
+
+		.content-wrap {
+			float: left;
+			padding-left: 85px;
+			margin-top: -5px;
+
+			.date, .categories, span a {
+				font-size: $font_small-size;
+			}
+
+			span a:hover {
+				text-decoration: underline;
+			}
+
+			.comments + .author,
+			.date + .categories {
+				position: relative;
+				margin-left: 11px;
+
+				&:after {
+					content: '•';
+					font-size: 15px;
+					line-height: 0;
+					position: absolute;
+					left: -10px;
+					top: 8px;
+					color: $color_dark;
+				}
+			}
+
+			&.no-thumb {
+				padding-left: 0px;
+			}
+		}
+	}
+}
+
+.site-footer {
+	.widget_norebro_widget_recent_posts {
+		ul.recent-posts-list {
+			h4 {
+				a:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Norebro about author widget
+--------------------------------------------------------------*/
+.widget_norebro_widget_about_author {
+	img {
+		width: 80px;
+		height: 80px;
+		float: left;
+		display: inline-block;
+		margin-right: 15px;
+	}
+
+	.info {
+		width: 100%;
+		float: left;
+		position: relative;
+		margin-left: -100px;
+		padding: 32px 0 0 105px;
+
+		.info-wrap {
+			width: 100%;
+			min-height: 65px;
+		}
+
+		h4 {
+			width: 100%;
+			text-align: inherit;
+			display: block;
+			float: left;
+			margin-top: -5px;
+
+			&.line-brand:after {
+				width: 2em;
+				top: -1em;
+			}
+		}
+
+		.site {
+			font-size: $font_extra_small-size;
+		}
+
+		.socialbar {
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			a.social {
+				width: 26px;
+				height: 26px;
+				margin-left: 2px;
+				font-size: $font_small-size;
+				line-height: 26px;
+			}
+		}
+	}
+
+	.content {
+		font-size: 15px;
+	}
+}
+
+/*--------------------------------------------------------------
+## Norebro login widget
+--------------------------------------------------------------*/
+.widget_norebro_widget_login {
+	font-size: $font_small-size;
+	overflow: hidden;
+
+	.login-wrap {
+		overflow: hidden;
+		position: relative;
+		transition: height .25s ease-in-out;
+	}
+
+	form {
+		overflow: hidden;
+	}
+
+	.login-form {
+		position: relative;
+		left: 0;
+		opacity: 1;
+		transition: opacity .25s ease-in-out;
+		z-index: 2;
+
+		&.hidden {
+			display: block;
+			opacity: 0;
+			position: absolute;
+			z-index: 1;
+		}
+	}
+
+	.reg-form {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity .25s ease-in-out;
+		z-index: 1;
+
+		&.visible {
+			opacity: 1;
+			z-index: 2;
+		}
+	}
+
+	.reg-success {
+		color: #0a6;
+	}
+
+	.login-error,
+	.reg-error {
+		color: #c22;
+	}
+
+	.login-submit {
+		float: left;
+		margin-top: 2px;
+
+		&.with-registration {
+			width: 48%;
+		}
+
+		button {
+			margin-top: 0;
+		}
+	}
+
+	.btn {
+		.text-loading {
+			display: none;
+		}
+
+		&.loading {
+			background: transparent;
+			color: $color_dark;
+			opacity: .6;
+			cursor: default;
+
+			.text-loading {
+				display: block;
+			}
+
+			.text {
+				display: none;
+			}
+		}
+	}
+
+	.login-registration {
+		width: 48%;
+		margin-top: 2px;
+		float: right;
+
+		a {
+			width: 100%;
+
+			&:hover {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.login-remember {
+		float: left;
+
+		label {
+			cursor: pointer;
+		}
+	}
+
+	.login-lost-password {
+		float: right;
+	}
+
+	.login-remember,
+	.login-lost-password {
+		width: auto;
+	}
+
+	.reg-submit {
+		margin-top: 12px;
+
+		button {
+			margin-top: 0;
+		}
+	}
+
+	.back-to-login {
+		margin-top: 20px;
+	}
+
+	.logged-in {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		opacity: 0;
+		transition: opacity .25s ease-in-out;
+
+		&.visible {
+			position: relative;
+			opacity: 1;
+			z-index: 2;
+		}
+	}
+
+	a {
+		color: $color_brand;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Norebro subscribe widget
+--------------------------------------------------------------*/
+.site-footer {
+	.widget_norebro_widget_subscribe {
+		input {
+			border-color: rgba(#fff,.15);
+			color: #bcbcbc;
+
+			&::placeholder {
+				color: currentColor;
+			}
+
+			&:focus {
+				border-color: rgba(#fff,.5);
+			}
+		}
+
+		button.btn {
+			background: transparent;
+			border-color: rgba(#fff,.15);
+			color: rgba(#fff,.5);
+
+			&:hover {
+				background: rgba(#fff,.15);
+				border-color: transparent;
+				color: #fff;
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Norebro contact widget
+--------------------------------------------------------------*/
+.widget_norebro_widget_contact {
+	address {
+		display: inline;
+	}
+
+	ul.list-box {
+		margin: 0;
+	}
+
+	li {
+		padding: 5px 0;
+
+		&:after {
+			display: none;
+		}
+
+		&:first-child {
+			padding-top: 0;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Norebro socialbar widget
+--------------------------------------------------------------*/
+.widget_norebro_widget_socialbar_subscribe,
+.widget_norebro_widget_socialbar {
+	.socialbar {
+		margin-top: -10px;
+	}
+	.socialbar a {
+		background: transparent;
+		color: $color_dark;
+		margin-top: 10px;
+
+		&:hover {
+			background: $color_dark;
+			color: #fff;
+		}
+	}
+}

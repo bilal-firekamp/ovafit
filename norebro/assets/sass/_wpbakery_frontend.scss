@@ -1,0 +1,48 @@
+.vc_editor.compose-mode {
+    .vc_norebro_tabs,
+    .vc_norebro_split_screens {
+        position: relative;
+        margin: 10px 0;
+        border-radius: 4px;
+
+        * { 
+            // opacity: .2;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 10000;
+            background: rgba(#FFD569, 0.85);
+        }
+
+        &:after {
+            content: 'Sorry, but this shortcode can be properly edited only in WPBakery Backend Editor.';
+            position: absolute;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont,Roboto,"Helvetica Neue",Arial,sans-serif;
+            display: block;
+            padding: 0px 20%;
+            font-weight: 500;
+            color: rgba(#000, .8);
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            left: 0px;
+            text-align: center;
+            z-index: 10001;
+        }
+    }
+}
+
+.vc_norebro_accordion_inner .content.open .wrap > .vc_element-container {
+    display: none;
+}
+
+// .compose-mode .vc_element .vc_element-container .ui-sortable {
+//     display: none;
+// }

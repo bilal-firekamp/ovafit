@@ -1,0 +1,154 @@
+/*!
+Theme Name: Norebro
+Theme URI: https://norebro.clbthemes.com/
+Author: Colabrio
+Author URI: https://clbthemes.com/
+Description: Norebro is flexible and high performance multipurpose WordPress Theme for personal and corporate use. It comes with the most popular WordPress page builder Visual Composer. Create gorgeous pages and layouts fast and easy without coding.
+Version: 1.5.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: norebro
+Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-colors, custom-header, custom-menu, featured-images, full-width-template, post-formats, theme-options, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Modules
+# Shortcodes
+	## Accordion box
+	## Banner box
+	## Chart box
+	## Contact module
+	## Countdown box
+	## Counter box
+	## Dropcaps
+	## Google Maps
+	## Icon box
+	## Instagram feed
+	## List box
+	## Menu list
+	## Message box
+	## Parallax
+	## Pricing table
+	## Progress bars
+	## Slider
+	## Social bar
+	## Split Box
+	## Split Screen
+	## Subscibe
+	## Tab box
+	## Team members
+	## Testimonials
+	## Tooltips
+	## Video module
+# Widgets
+# Content
+	## Elements
+	## Theme elements
+	## Error pages
+	## Structure
+		### Header
+		### Subheader
+		### Footer
+		### Menus
+		### Sidebar
+	## Posts and pages
+		### Breadcrumbs
+		### Post
+		### Comments
+		### Paginator
+# Portfolio
+	## Portfolio grid
+	## Portfolio pages
+# Blog
+	## Cards
+	## Post
+	## Comments
+# WPML
+# Help classes
+# Woocommerce
+	## Notices
+	## Mini cart
+	## Single product
+	## Products
+	## Cart
+	## Checkout
+	## Paginator
+	## Wishlist
+	## Wishlist
+	## Fields
+--------------------------------------------------------------*/
+
+@import "variables";
+@import "mixins";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography";
+
+/*--------------------------------------------------------------
+# Modules
+--------------------------------------------------------------*/
+@import "modules";
+
+/*--------------------------------------------------------------
+# Shortcodes
+--------------------------------------------------------------*/
+@import "shortcodes/shortcodes";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "widgets/widgets";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+@import "portfolio/portfolio";
+
+/*--------------------------------------------------------------
+# Blog
+--------------------------------------------------------------*/
+@import "blog/blog";
+
+/*--------------------------------------------------------------
+# WPML
+--------------------------------------------------------------*/
+@import "wpml";
+
+/*--------------------------------------------------------------
+# Help classes
+--------------------------------------------------------------*/
+@import "help-classes";
+
+/*--------------------------------------------------------------
+# WooCommerce
+--------------------------------------------------------------*/
+@import "woocommerce/woocommerce";
+
+@import "masonry";
+
+/*--------------------------------------------------------------
+# WPBAkery Front-End
+--------------------------------------------------------------*/
+@import "wpbakery_frontend";

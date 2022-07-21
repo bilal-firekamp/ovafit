@@ -1,0 +1,38 @@
+.process {
+	position: relative;
+	padding: 1px 0;
+
+	.number {
+		color: #ebebeb;
+		font: bold 100px $font_titles;
+		position: absolute;
+		line-height: 1;
+		top: 0;
+		left: 0;
+	}
+
+	h3 {
+		font-size: 24px;
+		margin: 30px 0 45px;
+	}
+
+	.description {
+		margin: 0;
+	}
+
+
+	&.boxed {
+		background: #fff;
+		padding: 40px;
+		margin-top: 50px;
+
+		.number {
+			top: -45px;
+			left: 35px;
+		}
+
+		h3 {
+			margin: 20px 0 10px;
+		}
+	}
+}

@@ -1,0 +1,69 @@
+.clients-logo {
+	position: relative;
+
+	img {
+		position: relative;
+		z-index: 2;
+	}
+
+	.overlay {
+		background: #f7f7f7;
+		height: auto;
+		opacity: 0;
+		transform: scale(.96);
+		transition: .3s cubic-bezier(.4,.7,.3,1);
+		transition-property: opacity, transform;
+		z-index: 1;
+
+		img {
+			visibility: hidden;
+		}
+
+		h4, .description {
+			padding: 30px 50px;
+		}
+
+		.description {
+			padding-top: 10px;
+		}
+	}
+
+	&:hover {
+		z-index: 3;
+
+		.overlay {
+			opacity: 1;
+			transform: none;
+		}
+	}
+
+
+	&.default {
+		overflow: hidden;
+
+		.second-image {
+			width: 100%;
+			position: absolute;
+			top: 100%;
+			left: 0;
+		}
+
+		.first-image,
+		.second-image {
+			transition: transform .4s cubic-bezier(.4,.7,.3,1);	
+		}
+
+		&:hover {
+			.first-image,
+			.second-image {
+				transform: translateY(-100%);
+			}
+		}
+	}
+
+	&.shadow {
+		.overlay {
+			box-shadow: 0 5px 40px 10px rgba(#000, .08);
+		}
+	}
+}

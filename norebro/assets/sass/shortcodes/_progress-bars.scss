@@ -1,0 +1,105 @@
+.progress-bar {
+	width: 100%;
+
+	h4 {
+		margin: 0;
+		font-size: $font_small-size;
+	}
+
+	.line-wrap {
+		background: #f3f3f3;
+		width: 100%;
+		height: 8px;
+		margin-top: 10px;
+	}
+
+	.line {
+		display: block;
+		width: 0px;
+		height: 8px;
+		transition: width 1.6s cubic-bezier(.2,.35,.25,1);
+		position: relative;
+	}
+
+	.line-percent {
+		content: '20';
+		background: $color_dark;
+		color: #fff;
+	    padding: 0px 8px;
+	    height: 24px;
+	    display: flex;
+	    align-items: center;
+		font-size: $font_caption-size;
+		font-weight: 600;
+		position: absolute;
+		bottom: 100%;
+		right: 0;
+		transform: translateX(50%) translateY(-10px);
+
+		&:after {
+			content: '';
+			background: inherit;
+			width: 8px;
+			height: 8px;
+			position: absolute;
+			bottom: -4px;
+			right: 50%;
+			transform: translateX(50%) rotate(45deg);
+		}
+	}
+
+	&.inner {
+		.line-wrap {
+			height: 14px;
+		}
+
+		.line {
+			height: 6px;
+			top: 4px;
+			left: 4px;
+		}
+
+		.line-percent {
+			margin-bottom: 4px;
+		}
+	}
+
+	&.split {
+		.line-wrap {
+			background: transparent;
+			position: relative;
+		}
+
+		.line-split {
+			background: #ebebeb;
+			width: calc(100% / 8 - 2px);
+			height: 8px;
+			float: left;
+			margin-right: 2px;
+			position: relative;
+			overflow: hidden;
+
+			.line {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+
+	&.pattern {
+		.line {
+			background-image: url('/assets/images/progress-bar-pattern.png');
+			animation: progress-bar-line-strip-anim 1s linear infinite;
+		}
+	}
+}
+
+@keyframes progress-bar-line-strip-anim {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: -21px 0;
+	}
+}

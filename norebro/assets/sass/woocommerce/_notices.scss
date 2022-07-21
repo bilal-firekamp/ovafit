@@ -1,0 +1,22 @@
+.woocommerce {
+	.message-box {
+		margin-top: 0px;
+		margin-bottom: 15px;
+	}
+
+	.wc-single-page-message {
+		.message-box:first-child {
+			margin-top: 35px;
+		}
+
+		.message-box:last-child {
+			margin-bottom: 35px;
+		}
+	}
+
+	.wc-cart-messages {
+		.message-box:last-child {
+			margin-bottom: 40px;
+		}
+	}
+}

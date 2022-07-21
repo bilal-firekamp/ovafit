@@ -1,0 +1,183 @@
+.team-member {
+	width: 100%;
+
+	h3 {
+		font-size: $font_main-size;
+		margin-top: 20px;
+	}
+
+	p.subtitle {
+		font-size: $font_caption-size;
+		margin-top: 5px;
+		font-weight: 400;
+	}
+	.socialbar {
+		float: left;
+	}
+	.team-member-link {
+		float: right;
+		height: 30px;
+		line-height: 30px;
+		padding: 0px 15px;
+		border: 1px solid #fff;
+		border-radius: 15px;
+		color: #fff;
+
+		i {
+			font-size: 26px;	
+		}
+
+		&:hover {
+			background: #fff;
+			color: $color_dark;
+		}
+		
+	}
+
+	.description {
+		margin-top: 15px;
+	}
+
+	.socialbar > a,
+	.socialbar.default > a {
+		width: 30px;
+		height: 30px;
+		line-height: 29px;
+		margin-right: 5px;
+		transition-property: box-shadow, background;
+
+		&:hover {
+			color: #fff;
+			border-color: #fff;
+		}
+	}
+
+	.image-wrap {
+		position: relative;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			display: block;
+		}
+
+		.overlay {
+			box-shadow: 0 -190px 145px -145px rgba($color_dark, .8) inset;	
+			opacity: 0;
+			transform: translateY(20px);
+			transition: .2s ease-in-out;
+			transition-property: opacity, transform;
+
+			.content-center .wrap {
+				vertical-align: bottom;
+				padding: 30px;
+				transition: transform .2s ease-in-out;
+			}
+		}
+	}
+
+	&:hover {
+		.overlay {
+			opacity: 1;
+			transform: none;
+		}
+	}
+
+	&.inner {
+		.overlay {
+			background: rgba($color_dark, .9);
+			box-shadow: none;
+			transform: none;
+		}
+
+		.description {
+			color: #fff;
+			margin-bottom: 20px;
+		}
+
+		.content-center .wrap {
+			transform: translateY(20px);
+		}
+
+		&:hover {
+			.content-center .wrap {
+				transform: none;
+			}
+		}
+	}
+
+	&.cover {
+		padding: 0;
+		overflow: hidden;
+
+		&.column-2 {
+			.image-wrap,
+			.cover-content {
+				width: 33.333%;
+				float: left;
+			}
+		}
+
+		&.column-3 {
+			.image-wrap,
+			.cover-content {
+				width: 25%;
+				float: left;
+			}
+		}
+
+		&.column-4 {
+			.image-wrap,
+			.cover-content {
+				width: 20%;
+				float: left;
+			}
+		}
+
+		&.column-5 {
+			.image-wrap,
+			.cover-content {
+				width: 16.66%;
+				float: left;
+			}
+		}
+
+		img {
+			width: 100%;
+		}
+
+		.cover-content {
+			background: $color_dark;
+			padding: 0;
+			overflow: hidden;
+			transition: width .4s cubic-bezier(.54,.47,.38,1);
+		}
+
+		h3, .description {
+			color: #fff;
+		}
+
+		.description {
+			margin-bottom: 20px;
+		}
+
+		.wrap {
+			padding: 30px;
+			position: relative;
+		}
+
+		@media screen and (max-width: 768px) {
+			&.column-2,
+			&.column-3,
+			&.column-4,
+			&.column-5,
+			&.column-6 {
+				.image-wrap,
+				.cover-content {
+					width: 100%;
+					float: left;
+				}
+			}
+		}
+	}
+}

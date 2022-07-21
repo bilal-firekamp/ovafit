@@ -1,0 +1,39 @@
+.testimonials {
+	text-align: center;
+
+	.avatar {
+		background-clip: border-box;
+		width: 92px;
+		height: 92px;
+		margin: 15px auto 20px;
+		border: 6px solid rgba(0,0,0,.05);
+		border-radius: 50%;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			min-width: 80px;
+			min-height: 100%;
+		}
+	}
+
+	blockquote {
+		margin: 10px 0;
+		font-size: $font_main-size;
+		line-height: 1.8;
+		border-top: none;
+		padding: 0;
+
+		&:after {
+			display: none;
+		}
+	}	
+
+	p.subtitle {
+		margin-top: 4px;
+	}
+
+	h4 {
+		font-size: $font_main-size;
+	}
+}

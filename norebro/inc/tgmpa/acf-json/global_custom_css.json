@@ -1,0 +1,154 @@
+{
+    "key": "group_5946360af373c5",
+    "title": "Custom CSS",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_542245d4313bf",
+            "label": "General Styles",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_591ac509d4a44",
+            "label": "Custom CSS styles",
+            "name": "global_page_custom_css",
+            "type": "norebro_code",
+            "instructions": "Write your own stylesheet here",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Your CSS code goes here",
+            "language": "css"
+        },
+        {
+            "key": "field_5937e0a52b4567mod951",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p class=\"message\">Note, that you won't lose the CSS written here while updating the theme.</p>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_542245d6313bf",
+            "label": "Responsive Styles",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_593743a43b383415",
+            "label": "Large screens",
+            "name": "global_page_custom_large_css",
+            "type": "norebro_code",
+            "instructions": "Write your stylesheet here <em>| from 1025px</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "language": "css"
+        },
+        {
+            "key": "field_593743a43b373415",
+            "label": "Medium screens",
+            "name": "global_page_custom_medium_css",
+            "type": "norebro_code",
+            "instructions": "Write your stylesheet here <em>| up to 1024px</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "language": "css"
+        },
+        {
+            "key": "field_593743a43b363415",
+            "label": "Small screens",
+            "name": "global_page_custom_small_css",
+            "type": "norebro_code",
+            "instructions": "Write your stylesheet here <em>| up to 767px</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "language": "css"
+        },
+        {
+            "key": "field_593743443b383415",
+            "label": "Extra small screens",
+            "name": "global_page_custom_extrasmall_css",
+            "type": "norebro_code",
+            "instructions": "Write your stylesheet here <em>| up to 566px</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "language": "css"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-custom"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

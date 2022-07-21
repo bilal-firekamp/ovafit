@@ -1,0 +1,47 @@
+// Structure
+$size_wrapped-container: 1320px;
+$size_offset-fullwidth-container: 7%;
+$size_page-offset-top: 80px;
+$size_page-offset-bottom: 90px;
+$size_page-offset-top-md: 30px;
+$size_page-offset-bottom-md: 30px;
+$transition_function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Colors
+$color_brand: #174EE2;
+$color_dark: #282828;
+$color_light-dark: #494949;
+$color_white: #fff;
+$color_gray: #d9d9d9;
+$color_light-gray: rgba(0,0,0,.03);
+$color_dark-gray: #888;
+$color_border: rgba(0,0,0,.15);
+$color_dark-border: rgba(0,0,0,.4);
+$color_fields-text: #555555;
+$color_titles: $color_dark;
+$color_subtitles: $color_dark-gray;
+$color_texts: $color_light-dark;
+$color_footer: rgba(255,255,255,.6);
+$color_footer-border: rgba(255,255,255,.2);
+
+// Typography
+$font_main: "Rubik", sans-serif;
+$font_main-size: 1rem;
+$font_small-size: 0.95rem;
+$font_extra_small-size: 0.9rem;
+$font_caption-size: 0.75rem;
+$font_code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font_pre: "Courier 10 Pitch", Courier, monospace;
+$font_titles: "Poppins", sans-serif;
+$font_subtitles: "Poppins", serif;
+$font_lh-body: 1.65;
+$font_lh-titles: 1.4;
+$font_lh-subtitles: 1.4;
+$font_lh-text: 1.4;
+
+$font_h1: 60px;
+$font_h2: calc(60px * 0.72);
+$font_h3: calc(60px * 0.58);
+$font_h4: calc(60px * 0.45);
+$font_h5: calc(60px * 0.33);
+$font_h6: 60px;

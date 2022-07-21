@@ -1,0 +1,93 @@
+.subscribe {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+	table {
+		width: 420px;
+		display: inline-table;
+		margin: 0;
+
+		td, th {
+			padding: 0;
+			border: none;
+		}
+
+		@media screen and (max-width: 768px) {
+			width: 100%;
+		}
+	}
+
+
+	&.fullwidth table {
+		width: 100%;
+	}
+
+	input[type="text"] {
+		width: 100%;
+		background: none;
+		height: 46px;
+		border-right-width: 0;
+	}
+
+	input[type="submit"] {
+		height: 46px;
+		margin: 0;
+		position: relative;
+		z-index: 2;
+	}
+
+	.btn-wrap {
+		width: 1%;
+	}
+
+	&.outline,
+	&.flat {
+		input[type="text"] {
+			width: calc(100% + 40px);
+			border-right-width: 0px;
+			border-radius: 50px 0 0 50px;
+			padding-right: 50px;
+		}
+	}
+
+	&.flat {
+		.btn:hover,
+		.btn-outline,
+		.btn-flat:hover {
+			background: #fff;
+		}
+	}
+
+	@media screen and (max-width: 768px){
+		td, tr {
+			display: block;
+		}
+		.input[type="text"] {
+			width: 100%;
+		}
+		.btn-wrap {
+			width: 100%;
+			margin-top: 15px;
+		}
+
+		.btn {
+			width: 100%;
+		}
+
+		&.outline, &.flat {
+			input[type="text"] {
+				width: 100%;
+				border-radius: 50px;
+				border-right-width: 1px;
+			}
+		}
+	}
+
+	&.squared {
+		input[type="text"],
+		input[type="submit"] {
+			border-radius: 0;
+		}
+	}
+}

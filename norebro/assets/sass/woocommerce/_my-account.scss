@@ -1,0 +1,306 @@
+.woocommerce {
+
+	.woocommerce-MyAccount-wrap {
+		margin: 20px 0 80px;
+		overflow: hidden;
+	}
+
+	.tab-box .item
+
+	&-password-strength {
+		margin-top: 20px;
+	}
+
+	.myaccount-login-form {
+		margin: 60px 0 80px;
+
+		h2 {
+			text-align: center;
+			font-size: 24px;
+		}
+
+		.tab-box {
+			.item {
+				top: 0px;
+			}
+			.buttons-wrap {
+				border: none;
+			}
+		}
+		
+		form {
+			background: $color_light-gray;
+			width: 500px;
+			margin: 0px auto 40px;
+			padding: 40px 50px;
+			text-align: left;
+
+			.form-row:first-child {
+				margin-top: 0px;
+			}
+
+			p {
+				margin: 15px 0;
+			}
+
+			.lost-link {
+				margin-top: 15px;
+			}
+
+			.btn {
+				margin: 20px 0 10px;
+			}
+		}
+		@media screen and (max-width: 768px) {
+			form {
+				width: 100%;
+				padding: 40px;
+			}
+			.btn {
+				width: 100%;
+			}
+		}
+
+		.buttons-wrap {
+			max-width: 500px;
+			width: 100%;
+			margin: 0px auto;
+
+			.buttons {
+				overflow: hidden;
+
+				&.single {
+
+					.button {
+						cursor: default;
+					}
+
+					.line {
+						display: none;
+					}
+				}
+				
+				.button {
+					text-align: center;
+					margin: 0;
+					width: 50%;
+				}
+			}
+		}
+	}
+
+	.woo-my-user {
+		margin-bottom: 25px;
+		padding-bottom: 30px;
+		overflow: hidden;
+
+		img {
+			border-radius: 50%;
+			float: left;
+			margin-right: 20px;
+		}
+
+		h4 {
+			width: 100%;
+			margin: 25px 0 0;
+			padding-top: 5px;
+			display: block;
+			font-size: 15px;
+
+			&:after {
+				width: 2em;
+			}
+		}
+
+		a.logout {
+			font-size: $font_small-size;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.woo-my-nav {
+		width: 100%;
+		margin-bottom: 20px;
+
+		ul {
+			list-style: none;
+		}
+
+		li {
+			line-height: 23px;
+
+			a {
+				color: #343436;
+				font-size: $font_small-size;
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+			}
+
+			&.is-active a {
+				color: $color_brand;
+			}
+		}
+	}
+
+	.woo-my-content {
+		width: 100%;
+
+		> *:first-child {
+			margin-top: 0;
+		}
+
+		p a {
+			text-decoration: underline;
+
+			&:hover {
+				color: $color_brand;
+			}
+		}
+
+		mark {
+			background: $color_brand;
+		}
+
+		.woo-my-address {
+			margin-top: 15px;
+			
+			.wrap {
+				padding: 30px;
+				background: #f3f3f3;
+			}
+
+			h4 {
+				text-align: left;
+				float: left;
+			}
+
+			a {
+				float: right;
+				margin-top: 0px;
+				margin-right: 8px;
+				padding-left: 32px;
+				padding-right: 32px;
+			}
+
+			address {
+				clear: both;
+				line-height: 26px;
+			}
+		}
+
+		form h3 {
+			margin-bottom: 28px;
+		}
+
+		.form-row label {
+			display: none;
+		}
+
+		.message-download {
+			margin-top: 20px;
+		}
+
+		.edit-account {
+			text-align: left;
+
+			h4 {
+				margin-bottom: 20px;
+			}
+
+			.btn {
+				margin-top: 20px;
+			}
+		}
+
+		.woo-my-downloads {
+			margin: 30px 0;
+		}
+
+		.order-again {
+			margin-bottom: 30px;
+		}
+	}
+
+	.woo-my-orders-table {
+		margin-top: 10px;
+
+		th {
+			color: #343436;
+			display: table-cell;
+			font-weight: 400;
+			font-size: $font_extra_small-size;	
+			padding: 12px 0;
+		}
+
+		td {
+			padding: 18px 0;
+		}
+
+		tr {
+			background: transparent;
+			border-bottom: 1px solid #ebebeb;
+		}
+
+		td.order-number {
+			font-weight: 500;
+		}
+
+		td > .amount {
+			font-weight: 500;
+		}
+
+		td.order-actions {
+			text-align: right;
+		}
+
+		a.btn {
+			padding-left: 30px;
+			padding-right: 30px;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		&.woo-details {
+			margin-bottom: 40px;
+
+			tbody {
+				tr {
+					border-width: 0;
+
+					&:last-child {
+						border-width: 1px;
+
+						th, td {
+							padding-bottom: 20px;
+						}
+					}
+				}
+
+				th, td {
+					padding: 20px 0 0;
+					vertical-align: top;
+				}
+			}
+		}
+
+		&.woo-customer-details {
+			margin: 30px 0;
+
+			th {
+				border-top: 1px solid #ebebeb;
+			}
+		}
+	}
+}

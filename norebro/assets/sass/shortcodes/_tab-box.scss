@@ -1,0 +1,167 @@
+.tab-box {
+	width: 100%;
+
+	.buttons-wrap {
+		width: 100%;
+		position: relative;
+		border-bottom: 1px solid $color_border;
+	}
+
+	.buttons {
+		width: 100%;
+		white-space: nowrap;
+		overflow: auto;
+		position: relative;
+		margin-bottom: -1px;
+
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+
+		.line {
+			width: 0px;
+			height: 2px;
+			position: absolute;
+			bottom: 0px;
+			left: 0;
+			transition: .3s cubic-bezier(.2,.35,.25,1);
+			transition-property: width, transform;
+		}
+	}
+
+	.button {
+		width: auto;
+		margin: 0 30px 0 0;
+		padding: 18px 0;
+		font-size: $font_extra_small-size;
+		font-weight: 600;
+		display: inline-block;
+		clear: none;
+		cursor: pointer;
+		transition: color .15s ease-in-out;
+
+		&.active,
+		&:hover {
+			color: $color_dark;
+		}
+	}
+
+	.items {
+		position: relative;
+		transition: height .3s cubic-bezier(.2,.35,.25,1);
+	}
+
+	.item {
+		width: 100%;
+		opacity: 0;
+		overflow: hidden;
+		transition: .2s cubic-bezier(.2,.35,.25,1);
+		transition-property: opacity, visibility;
+		position: absolute;
+		top: 10px;
+		left: 0;
+		font-size: 15px;
+		font-weight: 300;
+
+		&.active {
+			opacity: 1;
+			overflow: visible;
+			z-index: 2;
+		}
+
+		p {
+			color: inherit;
+		}
+	}
+
+
+	&.filled {
+		background: $color_dark;
+		padding: 2px 25px 30px;
+
+		.buttons-wrap {
+			border-color: rgba(#fff,.3);
+
+			.line {
+				background: #fff;
+			}
+		}
+
+		.button {
+			color: rgba(#fff,.5);
+
+			&.active,
+			&:hover {
+				color: #fff;
+			}
+		}
+
+		.item {
+			color: #fff;
+		}
+	}
+
+	&.vertical {
+		.buttons-wrap {
+			float: left;
+			width: 160px;
+			max-width: 35%;
+			margin-top: 15px;
+			border-bottom: none;
+			border-right: 1px solid $color_border;
+		}
+
+		.buttons {
+			overflow: visible;
+			white-space: normal;
+			margin: 0;
+			padding-right: 5px;
+			right: -1px;
+
+			.line {
+				width: 2px;
+				top: 0;
+				left: auto;
+				right: 0;
+			}
+		}
+
+		.button {
+			width: 100%;
+			float: left;
+		}
+
+		.items {
+			width: calc(100% - 180px);
+			min-width: 60%;
+			float: right;
+		}
+
+		.item {
+			top: 0;
+		}
+
+
+		&.filled {
+			padding: 5px 20px 25px;
+
+			.buttons-wrap {
+				border-color: rgba(#fff,.3);
+			}
+		}
+	}
+
+	&.tabs-center {
+		.buttons {
+			text-align: center;
+		}
+	}
+
+	&.tabs-right {
+		.buttons {
+			text-align: right;
+		}
+	}
+}

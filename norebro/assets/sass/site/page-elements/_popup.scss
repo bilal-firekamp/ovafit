@@ -1,0 +1,49 @@
+.popup {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 10px;
+	left: 0;
+	z-index: 9999999;
+	opacity: 0;
+	visibility: hidden;
+	transition: .2s ease-in-out;
+	transition-property: top, visibility, opacity;
+	
+	.popup-close {
+		color: #a5a19d;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 54px;
+		position: absolute;
+		top: 0px;
+		right: 25px;
+		opacity: 0;
+		z-index: 1;
+		cursor: pointer;
+		transition: .2s ease-in-out;
+		transition-property: color, opacity, top;
+
+		&:hover {
+			color: #ffffff;
+		}
+
+		&.light:hover {
+			color: #343436;
+		}
+	}
+
+	&.active {
+		visibility: visible;
+		opacity: 1;
+		top: 0;
+
+		.popup-close {
+			top: 25px;
+			opacity: 1;
+		}
+	}
+}

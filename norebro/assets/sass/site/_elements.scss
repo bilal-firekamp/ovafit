@@ -1,0 +1,1077 @@
+html {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+div {
+	outline: none;
+}
+
+body {
+	background: $color_white;
+	height: 100%;
+	font-family: $font_main;
+	font-size: $font_main-size;
+	font-weight: 400;
+	overflow-x: hidden;
+
+	&.archive {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	body, html {
+		width: 100%;
+		overflow-x: hidden;
+	}
+}
+
+blockquote,
+q {
+	margin: 25px 0;
+	padding: 0 30px;
+	font-size: 15px;
+	line-height: 30px;
+	quotes: "" "";
+	position: relative;
+	border-color: $color_border !important; 
+
+	p {
+		margin: 0;
+		font-style: normal;
+		font-weight: 400;
+		position: relative;
+	}
+
+	cite, h4 {
+		position: relative;
+		text-align: left;
+		margin: 15px 0 0 0;
+		text-align: left;
+		font-weight: 600;
+		font-size: 11.6px;
+		font-style: normal;
+		line-height: 1.6;
+		text-transform: uppercase;
+	}
+}
+
+hr {
+	background-color: #ebebeb;
+	width: 100%;
+	border: 0;
+	height: 1px;
+	margin: 5px auto;
+	display: block;
+}
+
+mark {
+	color: #fff;
+	padding: 0 2px;
+}
+
+address {
+	font-size: $font_small-size;
+	font-style: normal;
+}
+
+pre {
+	background: rgba(0,0,0,.05);
+	padding: 15px;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+a {
+	color: $color_dark;
+	text-decoration: none;
+	cursor: pointer;
+	transition: .15s ease-in-out;
+	transition-property: color, opacity, background, transform, border-color;
+
+	&:hover {
+		color: $color_brand;
+	}
+
+	&.hover-underline {
+		text-decoration: none;
+		display: inline-block;
+		position: relative;
+
+		&:before {
+			content: '';
+			background: currentColor;
+			width: 100%;
+			height: 1px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			opacity: 0;
+			transform: translateY(5px);
+			transition: .2s ease-in-out;
+			transition-property: transform, opacity, background;
+		}
+
+		&:hover {
+			text-decoration: none;
+			
+			&:before {
+				opacity: 1;
+				transform: translateY(1px) rotate(0.01deg); // rotate for firefox smooth
+			}
+		}
+
+		&.underline-brand:before {
+			background: $color_brand;
+		}
+	}
+}
+
+p a {
+	color: $color_brand;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+
+/*--------------------------------------------------------------
+### Lists
+--------------------------------------------------------------*/
+ul, ol {
+	margin: 0 0 1.5em 3em;
+
+	li {
+		padding: 3px 0;
+		list-style-position: inside;
+	}
+}
+
+ul {
+	list-style: disc;
+	margin: 0;
+	padding: 0;
+
+	&.unstyled {
+		list-style: none;
+	}
+	&.inline li {
+		display: inline-block;
+	}
+	&.list-square li {
+		padding-left: 20px;
+		list-style: none;
+
+		&:after {
+			content: '\25A0';
+			float: left;
+			margin-left: -20px;
+			margin-top: -1px;
+			font-size: 50%;
+			vertical-align: middle;
+		}
+	}
+}
+
+ol {
+	list-style: decimal;
+	margin-left: 0;
+	padding-left: 0px;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 20px;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+
+/*--------------------------------------------------------------
+### Tables
+--------------------------------------------------------------*/
+table, 
+.wp-block-table {
+	margin: 15px 0;
+	width: 100%;
+
+	td, th {
+		border: none;
+		border-top: 1px solid $color_border;
+		border-bottom: 1px solid $color_border;
+		text-align: inherit;
+		padding: 10px 10px 10px 0;
+	}
+}
+
+
+/*--------------------------------------------------------------
+### Buttons
+--------------------------------------------------------------*/
+input[type="submit"],
+button,
+.btn,
+a.btn
+input.btn,
+a.button,
+span.button,
+div.button,
+.wp-block-button__link {
+	background: $color_dark;
+	color: $color_white;
+	padding: 14px 24px;
+	border: 1px solid $color_dark;
+	border-radius: 50px;
+	font: 600 $font_extra_small-size $font_titles;
+	text-decoration: none;
+	outline: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition-property: background, color, border-color;
+	transition-duration: .2s;
+	transition-timing-function: ease-in-out;
+
+	line-height: 22px;
+
+	&:hover {
+		background: transparent;
+		color: $color_dark;
+		border-color: currentColor;
+		transition-duration: .1s;
+	}
+
+	&.full-width {
+		display: flex;
+		justify-content: center;
+	}
+
+	> .icon {
+		max-height: 20px;
+		min-width: 20px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 140%;
+		text-decoration: none;
+		position: relative;
+
+		&.ion-left {
+			margin-right: 4px;
+		}
+
+		&.ion-right {
+			margin-left: 4px;
+		}
+	}
+
+	&.btn-white {
+		background: #fff;
+		border-color: #fff;
+		color: $color_dark;
+
+		&:hover {
+			background: transparent;
+			color: #fff;
+		}
+	}
+
+	&.text-on-hover {
+		overflow: hidden;
+		position: relative;
+
+		.icon, 
+		.text {
+			transition: .2s ease-in-out;
+			transition-property: transform, opacity;
+		}
+
+		.icon {
+			width: 100%;
+			height: 20px;
+			position: absolute;
+			left: 0;
+			max-height: 1rem;
+			display: flex;
+			justify-content: center;
+		}
+
+		.text {
+			display: inline-block;
+			transform: translateY(-120%);
+			opacity: 0;
+		}
+
+		&:hover {
+			.icon {
+				transform: translateY(120%);
+				opacity: 0;
+			}
+			.text {
+				transform: none;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.wp-block-button__link {
+	&:hover {
+		background: transparent !important;
+	}
+}
+
+p a.btn {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.btn-wrap {
+	.btn-small {
+		min-width: 40px;
+	}
+}
+
+.btn-brand {
+	background: $color_brand;
+	border-color: $color_brand;
+	color: #fff;
+
+	&:hover {
+		background: transparent;
+		color: $color_brand;
+	}
+}
+
+button[disabled],
+input[type="submit"][disabled] {
+	opacity: .8;
+	cursor: default;
+
+	&:hover {
+		background: $color_dark;
+		color: #fff;
+	}
+
+	&.btn-white {
+		&:hover {
+			background: #fff;
+			color: $color_dark;
+		}
+	}
+
+	&.btn-brand {
+		&:hover {
+			background: $color_brand;
+			color: #fff;
+		}
+	}
+}
+
+.btn-outline,
+input[type="submit"].btn-outline,
+a.btn-outline,
+.is-style-outline .wp-block-button__link {
+	background: transparent;
+	color: $color_dark;
+
+	&:not(:hover) {
+		border-color: currentColor;
+	}
+
+	&:hover {
+		background: $color_dark;
+		color: #fff;
+	}
+
+	&.btn-white {
+		background: transparent;
+		border-color: #fff;
+		color: #fff;
+
+		&:hover {
+			background: #fff;
+			color: $color_dark;
+		}
+	}
+
+	&.disabled:hover {
+		background: transparent;
+		color: $color_dark;
+		border-color: $color_dark;
+		cursor: default;
+	}
+
+	&.btn-brand {
+		background: transparent;
+		border-color: $color_brand;
+		color: $color_brand;
+
+		&:hover {
+			background: $color_brand;
+			border-color: $color_brand;
+			color: #fff;
+		}
+
+		&.disabled:hover {
+			background: transparent;
+			border-color: $color_brand;
+			color: $color_brand;
+		}
+	}
+}
+
+.is-style-outline .wp-block-button__link {
+	&:hover {
+		background: $color_dark !important;
+		color: #fff !important;
+	}
+}
+
+.is-style-outline .wp-block-button__link {
+	border: 1px solid $color_dark;
+
+	&.has-blue-dark-color {
+		color: $color_brand;
+		border-color: $color_brand;
+	}
+
+	&.has-dark-strong-color {
+		color: #24262B;
+		border-color: #24262B;
+	}
+
+	&.has-dark-light-color {
+		color: #32353C;
+		border-color: #32353C;
+	}
+
+	&.has-grey-strong-color {
+		color: #6A707E;
+		border-color: #6A707E;
+	}
+
+	&.has-grey-light-color {
+		color: #949597;
+		border-color: #949597;
+	}
+}
+
+.btn-squared,
+input[type="submit"].btn-squared,
+a.btn-squared {	
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 0px;
+}
+
+.btn-flat,
+input[type="submit"].btn-flat,
+a.btn-flat {
+	background: transparent;
+	border: none;
+	color: $color_dark;
+
+	&:hover {
+		background: $color_dark;
+		color: #fff;
+	}
+}
+
+.btn-link,
+a.btn-link {
+	background: transparent;
+	color: $color_dark;
+	margin-top: 6px;
+	padding: 4px 0;
+	border: none;
+	text-decoration: underline;
+	font-weight: 600;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+
+	.icon-arrow {
+		display: none;
+	}
+
+	&:hover {
+		background: transparent;
+		text-decoration: underline;
+	}
+
+	&.btn-brand {
+		color: $color_brand;
+
+		&:hover {
+			background: transparent;
+		}
+	}
+}
+
+.btn-small,
+a.btn-small {
+	padding: 14px 18px 12px;
+	line-height: 12px;
+	font-size: $font_caption-size;
+}
+
+.btn-large,
+a.btn-large {
+	padding: 19px 30px 17px;
+	line-height: 15px;
+	font-size: $font_small-size;
+}
+
+.btn-huge,
+a.btn-huge {
+	padding: 20px 30px;
+	line-height: 15px;
+	font-size: 15px;
+}
+
+.btn-full-width,
+a.btn-full-width {
+	width: 100%;
+}
+
+
+/*--------------------------------------------------------------
+### Fields
+--------------------------------------------------------------*/
+input, select, textarea {
+	font-family: $font_main;
+}
+
+input, select, textarea {
+	transition: .2s ease-in-out;
+	transition-property: color, background, border-color, opacity;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+	background: none;
+	color: $color_fields-text;
+	width: 100%;
+	padding: 12px 0;
+	border: none;
+	border-bottom: 1px solid rgba(#000,.25);
+	border-radius: 0px;
+	box-shadow: none;
+	position: relative;
+
+	&.outline,
+	&.flat {
+		border: 1px solid rgba(#000,.25);
+		padding-left: 25px;
+		padding-right: 25px;
+		border-radius: 50px;
+	}
+
+	&.flat {
+		background: #fff;
+		border: none;
+	}
+
+	&.squared {
+		border-radius: 0px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	&:focus {
+		border-color: $color_brand;
+		box-shadow: 0 0 0 $color_brand;
+		outline: none;
+	}
+}
+
+// Select for Safari
+select {
+	height: 47px;
+	padding: 0;
+
+	&:after {
+		content: '23';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #000;
+	}
+}
+
+input[type="checkbox"] {
+	width: auto;
+	padding: auto;
+	border: auto;
+}
+
+input,
+textarea {
+	&.placeholder,
+	&::placeholder {
+		color: $color_fields-text;
+	}
+}
+
+input.flat {
+	border: none;
+	padding: 13px 15px;
+}
+
+input.classic {
+	border: none;
+	padding: 13px 15px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding-left: 0;
+	padding-right: 0;
+
+	&.placeholder,
+	&::placeholder {
+		line-height: 16px;
+	}
+}
+
+textarea {
+	width: 100%;
+	min-height: 100%;
+	max-height: 100%;
+	resize: none;
+}
+
+.input-group {
+
+	&:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+
+	> br {
+		display: none;
+	}
+
+	label {
+		float: left;
+
+		&.col-6 {
+			width: 50%;
+		}
+
+		&.col-4 {
+			width: 33.33334%;
+		}
+
+		&.col-3 {
+			width: 25%;
+		}
+
+		&.col-2 {
+			width: 16.6665%;
+		}
+
+		&.col-fifth {
+			width: 20%;
+		}
+
+		&[class^="col-"] button.btn {
+			margin-top: 0;
+		}
+
+		@media screen and (max-width: 768px) {
+			input {
+				border-right-width: 1px;
+			}
+
+			&.col-6, &.col-4, &.col-3, &.col-2, &.col-fifth {
+				width: 100%;
+				padding-right: 0 !important;
+				padding-left: 0 !important;
+			}
+		}
+
+		&.offset {
+			input, &:last-of-type input:not([type="submit"]) {
+				border-width: 1px;
+			}
+		}
+	}
+}
+
+select {
+	position: relative;
+
+	option {
+		color: #343436;
+	}
+
+	&:before {
+		content: '';
+		background: #ffffff;
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&:after {
+		content: '';
+	}
+}
+
+.radio {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+
+	input {
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		cursor: pointer;
+
+		&:checked {
+			cursor: default;
+		}
+	}
+
+	input:checked + .input:after {
+		background: $color_brand;
+	}
+
+	.input {
+		background: #d5d4d4;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+
+		&:after {
+			content: '';
+			background: #ffffff;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			transition: background .1s ease-in-out;
+		}
+	}
+
+	&:hover {
+		.input:after {
+			background: #eee;
+		}
+		
+		input:checked + .input:after {
+			background: $color_brand;
+		}
+	}
+}
+
+.alignfull {
+	max-width: none;
+	position: relative;
+}
+
+
+/*--------------------------------------------------------------
+### Forms
+--------------------------------------------------------------*/
+form {
+	text-align: center;
+
+	button.btn {
+		margin-top: 14px;
+
+		&.btn-link {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	
+	// Circle loading
+	.btn-load {
+		width: 0px;
+		height: 20px;
+		display: inline-block;
+		transition: .21s ease-in-out;
+		transition-property: width, margin;
+		overflow: hidden;
+		margin-top: -8px;
+		margin-bottom: -5px;
+
+		input {
+			display: none;
+		}
+
+		&:before {
+			content: '';
+			background: url('assets/images/form_load.png') no-repeat center;
+			display: block;
+			width: 20px;
+			height: 20px;
+			margin: 0;
+			visibility: visible;
+			opacity: 1;
+			animation: rotate 1s infinite linear;
+		}
+	}
+
+	.error-check {
+		height: 0;
+		margin-top: 0px;
+		opacity: 0;
+		visibility: hidden;
+		transition-property: opacity, visibility, margin, height;
+		transition-duration: .2s;
+		transition-timing-function: ease-in-out;
+
+		&.active {
+			visibility: visible;
+			margin-top: 20px;
+			opacity: 1;
+			height: auto;
+		}
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+form.without-label-offset,
+.contact-form.without-label-offset {
+
+	.input-group label {
+		input, select {
+			border-right-width: 0px;
+		}
+		.focus {
+			width: calc(100% + 1px);
+		}
+
+		&:last-of-type {
+			input, select {
+				border-right-width: 1px;
+			}
+			.focus {
+				width: calc(100%);
+			}
+		}
+	}
+
+	.input-group label {
+		input, select {
+			border-top-width: 1px;
+		}
+	}	
+
+	.input-group + .input-group label {
+		input, select {
+			border-top-width: 0px;
+		}
+		.focus {
+			height: calc(100% + 1px);
+		}
+	}
+
+	p {
+		margin: 0;
+		
+		label {
+			input, select, textarea {
+				border-top-width: 0px;
+			}
+			.focus {
+				height: calc(100% + 1px);
+			}
+
+			&:first-of-type {
+				input, select, textarea {
+					border-top-width: 1px;
+				}
+				.focus {
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	.input-group + p label {
+		input, select, textarea {
+			border-top-width: 0px;
+		}
+		.focus {
+			height: calc(100% + 1px);
+		}
+	}
+
+	p + .input-group label {
+		input, select, textarea {
+			border-top-width: 1px;
+		}
+		.focus {
+			height: 100%;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.input-group {
+			label {
+				input, select {
+					border-right-width: 1px;
+					border-top-width: 1px;
+				}
+
+				&:last-child {
+					input, select {
+						border-top-width: 0px;	
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+### Cover block
+--------------------------------------------------------------*/
+.wp-block-cover {
+	font-family: $font_titles;
+
+	&-text {
+		font-size: 32px !important;
+	}
+}
+
+
+/*--------------------------------------------------------------
+### Gutenberg widgets
+--------------------------------------------------------------*/
+.wp-block-latest-posts,
+.wp-block-archives-list,
+.wp-block-categories-list {
+	list-style-type: none;
+}
+
+/*--------------------------------------------------------------
+### Preset colors
+--------------------------------------------------------------*/
+
+//Background colors
+.has-blue-dark-background-color {
+	background: $color_brand;
+
+	&.wp-block-button__link {
+		border-color: $color_brand;
+	}
+}
+
+.has-dark-strong-background-color {
+	background: #24262B;
+
+	&.wp-block-button__link {
+		border-color: #24262B;
+	}
+}
+
+.has-dark-light-background-color {
+	background: #32353C;
+
+	&.wp-block-button__link {
+		border-color: #32353C;
+	}
+}
+
+.has-grey-strong-background-color {
+	background: #6A707E;
+
+	&.wp-block-button__link {
+		border-color: #6A707E;
+	}
+}
+
+.has-grey-light-background-color {
+	background: #949597;
+
+	&.wp-block-button__link {
+		border-color: #949597;
+	}
+}
+
+
+//Text colors
+.has-blue-dark-color {
+	color:  $color_brand;
+}
+
+.has-dark-strong-color {
+	color: #24262B;
+}
+
+.has-dark-light-color {
+	color: #32353C;
+}
+
+.has-grey-strong-color {
+	color: #6A707E;
+}
+
+.has-grey-light-color {
+	color: #949597;
+}
+

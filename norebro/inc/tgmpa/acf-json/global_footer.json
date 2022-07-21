@@ -1,0 +1,586 @@
+{
+    "key": "group_592fd88fb4838",
+    "title": "Footer",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_592fdb59946d8",
+            "label": "General Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5937e0a52b488cexmod60",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p class=\"message\"><span class=\"icon ion-information-circled\"></span> <b>Note:</b> these settings apply to all footer elements of your website.</p>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_592fd8901e284",
+            "label": "Visibility",
+            "name": "global_footer_hide",
+            "type": "true_false",
+            "instructions": "Hide footer from all pages?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_592fd8901ea9a",
+            "label": "Content wrapper",
+            "name": "global_footer_is_wrapped",
+            "type": "true_false",
+            "instructions": "Add footer content wrapper to all pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_5940ebca457f2",
+            "label": "Content text color",
+            "name": "global_footer_text_color",
+            "type": "norebro_color",
+            "instructions": "Choose content text color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_592fd8901ca70",
+            "label": "Background color",
+            "name": "global_footer_background_color",
+            "type": "norebro_color",
+            "instructions": "Choose footer background color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_592fd8901ce59",
+            "label": "Background image",
+            "name": "global_footer_background_image",
+            "type": "image",
+            "instructions": "Upload background image for footer",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": 1200,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_592fd8901d26a",
+            "label": "Background size",
+            "name": "global_footer_background_size",
+            "type": "select",
+            "instructions": "Choose background image size type",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "auto": "Auto",
+                "cover": "Cover",
+                "contain": "Contain",
+                "100per": "100% 100%"
+            },
+            "default_value": [
+                "cover"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_592fd8901d6a3",
+            "label": "Background position",
+            "name": "global_footer_background_position",
+            "type": "select",
+            "instructions": "Choose background image position",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd8901d26a",
+                        "operator": "!=",
+                        "value": "cover"
+                    },
+                    {
+                        "field": "field_592fd8901d26a",
+                        "operator": "!=",
+                        "value": "100per"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "center": "Center",
+                "left_top": "Left top",
+                "left_center": "Left center",
+                "left_bottom": "Left bottom",
+                "center_top": "Center top",
+                "center_bottom": "Center bottom",
+                "right_top": "Right top",
+                "right_center": "Right center",
+                "right_bottom": "Right bottom"
+            },
+            "default_value": [
+                "center_bottom"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_592fd8901da75",
+            "label": "Background repeat",
+            "name": "global_footer_background_repeat",
+            "type": "select",
+            "instructions": "Repeat type of background image",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd8901d26a",
+                        "operator": "!=",
+                        "value": "cover"
+                    },
+                    {
+                        "field": "field_592fd8901d26a",
+                        "operator": "!=",
+                        "value": "100per"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "repeat": "Repeat",
+                "no_repeat": "No repeat",
+                "repeat_x": "Repeat only by X",
+                "repeat_y": "Repeat only by Y"
+            },
+            "default_value": [
+                "repeat"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_593916111579e",
+            "label": "Sticky footer",
+            "name": "global_footer_is_sticky",
+            "type": "true_false",
+            "instructions": "Set sticky (fixed) footer on all pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_592fdb63946d9",
+            "label": "Copyright Section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_592fd8901ee80",
+            "label": "Visibility",
+            "name": "global_footer_hide_copyright",
+            "type": "true_false",
+            "instructions": "Hide copyright section from all pages?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_592fd8901d6a1",
+            "label": "Copyright content position",
+            "name": "global_footer_copyright_alignment",
+            "type": "select",
+            "instructions": "Choose copyright content position",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left_and_right": "Left and right",
+                "center": "Center"
+            },
+            "default_value": [
+                "left_and_right"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_592fd8901f24bae3",
+            "label": "Copyright content",
+            "name": "global_footer_copyright_center",
+            "type": "text",
+            "instructions": "Add some content to copyright section. You can use HTML tags",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd8901d6a1",
+                        "operator": "==",
+                        "value": "center"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\u00a9 2017, norebro theme by <a href=\"http:\/\/clbthemes.com\" target=\"_blank\">Colabrio<\/a>.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_592fd8901f24baes",
+            "label": "Left content item",
+            "name": "global_footer_copyright_left",
+            "type": "text",
+            "instructions": "Add some content to copyright section <em>| Use HTML tags</em>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd8901d6a1",
+                        "operator": "==",
+                        "value": "left_and_right"
+                    }
+                ]
+            ],
+            "default_value": "\u00a9 2017, norebro theme by <a href=\"http:\/\/clbthemes.com\" target=\"_blank\">Colabrio<\/a>.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_592fd8901f24bfee",
+            "label": "Right content item</em>",
+            "name": "global_footer_copyright_right",
+            "type": "text",
+            "instructions": "Add some content to copyright section <em>| Use HTML tags</em>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd8901d6a1",
+                        "operator": "==",
+                        "value": "left_and_right"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "All right reserved.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_592fd8901fa31",
+            "label": "Copyright text color",
+            "name": "global_footer_copyright_text_color",
+            "type": "norebro_color",
+            "instructions": "Choose copyright section text color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_592fd8901fa32",
+            "label": "Copyright links color",
+            "name": "global_footer_copyright_links_color",
+            "type": "norebro_color",
+            "instructions": "Choose copyright section links color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_592fd8901f63a",
+            "label": "Copyright background",
+            "name": "global_footer_copyright_background_color",
+            "type": "norebro_color",
+            "instructions": "Choose section background color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_592fdb17946d7",
+            "label": "Other Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5937a7a521f8sebmod23",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<h9>Logo Widget</h9>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_592fd8901ba9e",
+            "label": "Brand logo",
+            "name": "global_footer_logo_type",
+            "type": "select",
+            "instructions": "Choose footer logo type",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light_variant": "Light variant logo",
+                "dark_variant": "Dark variant logo",
+                "sitename": "Text logo",
+                "custom": "Custom loaded image"
+            },
+            "default_value": [
+                "light_variant"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_592fd8901beb6",
+            "label": "Text logo settings",
+            "name": "global_footer_logo_font_typo",
+            "type": "norebro_typo",
+            "instructions": "Custom typography settings for site name",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd8901ba9e",
+                        "operator": "==",
+                        "value": "sitename"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "add_theme_inherited": true
+        },
+        {
+            "key": "field_592fd8901c689",
+            "label": "Logo image",
+            "name": "global_footer_logo_image",
+            "type": "image",
+            "instructions": "Upload custom image for footer logo",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fd8901ba9e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": 10,
+            "min_height": 10,
+            "min_size": "",
+            "max_width": 1600,
+            "max_height": 800,
+            "max_size": 5,
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-footer"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

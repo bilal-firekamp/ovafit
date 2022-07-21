@@ -1,0 +1,267 @@
+{
+    "key": "group_591ac509c1mod",
+    "title": "Panels",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_591b002d481fcffmod",
+            "label": "General Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_591ac509d09bmmod",
+            "label": "Panel position",
+            "name": "global_side_panel_position",
+            "type": "radio",
+            "instructions": "Choose panel position for all pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Left",
+                "right": "Right",
+                "hide": "Hide"
+            },
+            "default_value": [
+                "left"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "layout": "horizontal",
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_591ac509d0dcemod7",
+            "label": "Panel spacer",
+            "name": "global_side_panel_add_padding",
+            "type": "true_false",
+            "instructions": "Add a blank spacer under the panel? So that the full-width content doesn't come under the panel",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_591ac50989679545cmmod",
+            "label": "Background color",
+            "name": "global_side_panel_background",
+            "type": "norebro_color",
+            "instructions": "Choose panel background color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_591ac509cmmod",
+            "label": "Content color",
+            "name": "global_side_panel_color",
+            "type": "norebro_color",
+            "instructions": "Choose panel text and icons color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_591ac509d163089mod",
+            "label": "Typography",
+            "name": "global_side_panel_typo",
+            "type": "norebro_typo",
+            "instructions": "Set up typograhy for panel text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "add_theme_inherited": true
+        },
+        {
+            "key": "field_591ac50989679545e3mod",
+            "label": "Decor color",
+            "name": "global_side_panel_separator",
+            "type": "norebro_color",
+            "instructions": "Choose panel decoration color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_592fd8901f24b07333",
+            "label": "Panel content",
+            "name": "global_side_panel_text",
+            "type": "text",
+            "instructions": "Add some content to panel. You can use HTML tags.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\u00a9 2020, Norebro theme by <a href=\"http:\/\/clbthemes.com\" target=\"_blank\">Colabrio<\/a>, All right reserved.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5691b002d481fcffmod",
+            "label": "Other Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5937a78521f81ebmod23",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<h9>Sharing Settings</h9>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59374a3443db361523f",
+            "label": "Sharing",
+            "name": "global_side_panel_social_enable",
+            "type": "true_false",
+            "instructions": "Enable sharing feature for product pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_592fd666235d9mod2",
+            "label": "Sharing networks",
+            "name": "global_side_panel_social",
+            "type": "select",
+            "instructions": "Choose sharing social networks", 
+            "required": 0,
+            "conditional_logic": [],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "facebook": "Facebook",
+                "twitter": "Twitter",
+                "dribbble": "Dribbble",
+                "linkedin": "LinkedIn",
+                "pinterest": "Pinterest",
+                "vk": "Vkontakte"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 1,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_591ac509d0dcemod8",
+            "label": "Sharing on mobile",
+            "name": "global_side_panel_show_share_on_mobile",
+            "type": "true_false",
+            "instructions": "Show share button on mobile devices",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-panels"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

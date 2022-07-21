@@ -1,0 +1,2394 @@
+{
+    "key": "group_59390deae2279",
+    "title": "Page Settings",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_59390deaeee3d",
+            "label": "Header",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5937e0a52b48cexmod31",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p class=\"message\"><span class=\"icon ion-information-circled\"></span> <b>Note:</b> these settings apply only to the current page.</p>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59390deaef21a",
+            "label": "Header layout",
+            "name": "header_menu_style",
+            "type": "image_option",
+            "instructions": "Choose header template",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "image_option_value": [
+                {
+                    "name": "inherit",
+                    "description": "Theme settings inherited",
+                    "src": "acf__image_inherited.svg"
+                },
+                {
+                    "name": "style1",
+                    "description": "Transparent",
+                    "src": "acf__image_01.1.svg"
+                },
+                {
+                    "name": "style2",
+                    "description": "Filled Background",
+                    "src": "acf__image_01.svg"
+                },
+                {
+                    "name": "style3",
+                    "description": "Wrapped",
+                    "src": "acf__image_02.svg"
+                },
+                {
+                    "name": "style4",
+                    "description": "Centered Logo",
+                    "src": "acf__image_03.svg"
+                },
+                {
+                    "name": "style5",
+                    "description": "Top Logo",
+                    "src": "acf__image_05.svg"
+                },
+                {
+                    "name": "style6",
+                    "description": "Sidebar",
+                    "src": "acf__image_06.svg"
+                }
+            ],
+            "default_value": "inherit"
+        },
+        {
+            "key": "field_59390deaef9ea",
+            "label": "Blank spacer under header",
+            "name": "header_menu_add_cap",
+            "type": "radio",
+            "instructions": "We recommend use this setting for transparent and fixed header navigation",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Add spacer",
+                "no": "Don't add"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59390deaef614",
+            "label": "Content wrapper",
+            "name": "header_menu_use_wrapper",
+            "type": "radio",
+            "instructions": "Use header content wrapper",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Yes, add",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59411fcf0048f",
+            "label": "Header styles",
+            "name": "header_menu_style_settings",
+            "type": "radio",
+            "instructions": "Define header custom styles",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "custom": "Custom style"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5941276d0b89b",
+            "label": "Height",
+            "name": "header_menu_height",
+            "type": "norebro_responsive_height",
+            "instructions": "Set up header height",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59411fcf0048f",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59390deaf01d4",
+            "label": "Background color",
+            "name": "header_menu_background_color",
+            "type": "norebro_color",
+            "instructions": "Choose header background color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59411fcf0048f",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59390deaf05bd",
+            "label": "Typography",
+            "name": "header_menu_text_typo",
+            "type": "norebro_typo",
+            "instructions": "Set up typography for header",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59411fcf0048f",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "add_theme_inherited": true
+        },
+        {
+            "key": "field_5941261c69959",
+            "label": "Bottom border",
+            "name": "header_menu_hide_border",
+            "type": "true_false",
+            "instructions": "Hide bottom border from header?",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59411fcf0048f",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_594126ed0b898",
+            "label": "Bottom border type",
+            "name": "header_menu_border_type",
+            "type": "select",
+            "instructions": "Choose border stroke type",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59411fcf0048f",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_5941261c69959",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "solid": "Solid",
+                "dashed": "Dashed",
+                "dotted": "Dotted",
+                "double": "Double"
+            },
+            "default_value": [
+                "solid"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_594127340b89a",
+            "label": "Bottom border color",
+            "name": "header_menu_border_color",
+            "type": "norebro_color",
+            "instructions": "Choose bottom border color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59411fcf0048f",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_5941261c69959",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5937a0a521s71ebmod23",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<h9>Sticky header</h9>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59390deaf1978",
+            "label": "Sticky header",
+            "name": "header_menu_fixed",
+            "type": "radio",
+            "instructions": "Enable sticky header, when you scrolling the page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Fixed",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5937afa621s71ebmod23",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<h9>Logo Settings</h9>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59391a16302be",
+            "label": "Brand logo",
+            "name": "header_logo_style",
+            "type": "select",
+            "instructions": "Choose logo type for this page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "dark_variant": "Dark variant",
+                "light_variant": "Light variant",
+                "sitename": "Text logo",
+                "custom": "Custom image"
+            },
+            "default_value": [
+
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59390deaf09ac",
+            "label": "Text logo settings",
+            "name": "header_menu_sitename_typo",
+            "type": "norebro_typo",
+            "instructions": "Custom setting for text logo typography",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59391a16302be",
+                        "operator": "==",
+                        "value": "sitename"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "add_theme_inherited": true
+        },
+        {
+            "key": "field_59411f87d2536",
+            "label": "Custom logo",
+            "name": "header_menu_custom_logo",
+            "type": "image",
+            "instructions": "Loaded logo image for this page",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59391a16302be",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5937a0a621s71ebmod23",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<h9>Menu Settings</h9>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59390deaefde5",
+            "label": "Menu type",
+            "name": "menu_type",
+            "type": "radio",
+            "instructions": "Choose menu type for this page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "full": "Extended menu",
+                "hamburger": "Hamburger menu"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59390deaefde5123",
+            "label": "Extended menu",
+            "name": "extended_menu",
+            "type": "norebro_page_menu",
+            "instructions": "Choose from already pre-made menus <em>(Appearance > <a target=\"_blank\" href=\"./nav-menus.php\">Menus</a>)</em>",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deaefde5",
+                        "operator": "==",
+                        "value": "full"
+                    }
+                ]
+            ],
+            "required": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59390deaefde5123asftqew",
+            "label": "Hamburger menu",
+            "name": "hamburger_menu",
+            "type": "norebro_page_menu",
+            "instructions": "Choose from already pre-made menus <em>(Appearance > <a target=\"_blank\" href=\"./nav-menus.php\">Menus</a>)</em>",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deaefde5",
+                        "operator": "==",
+                        "value": "hamburger"
+                    }
+                ]
+            ],
+            "required": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59229bdfqr74dmod2",
+            "label": "Hamburger position",
+            "name": "menu_hamburger_align",
+            "type": "radio",
+            "instructions": "Choose hamburger menu position",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deaefde5",
+                        "operator": "==",
+                        "value": "hamburger"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "right": "Inside header",
+                "inside_panel": "Inside side panel"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "full",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59229bqraf317ae_modd",
+            "label": "Overlay menu layout",
+            "name": "fullscreen_menu_style",
+            "type": "image_option",
+            "instructions": "Choose layout type for overlay menu",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deaefde5",
+                        "operator": "==",
+                        "value": "hamburger"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "simple": "Simple",
+                "centered": "Centered",
+                "split": "Splited"
+            },
+            "image_option_value": [
+                {
+                    "name": "inherit",
+                    "description": "Theme settings inherited",
+                    "src": "acf__image_inherited.svg"
+                },
+                {
+                    "name": "default",
+                    "description": "Default",
+                    "src": "nor__listing_22.svg"
+                },
+                {
+                    "name": "simple",
+                    "description": "Left Side",
+                    "src": "nor__listing_21.svg"
+                },
+                {
+                    "name": "centered",
+                    "description": "Centered",
+                    "src": "nor__listing_19.svg"
+                },
+                {
+                    "name": "split",
+                    "description": "Splited",
+                    "src": "nor__listing_20.svg"
+                }
+            ],
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "default",
+            "layout": "vertical",
+            "return_format": "value",
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_594102937ce5c",
+            "label": "Subheader",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59390deaf0da4",
+            "label": "Visibility",
+            "name": "header_menu_add_contacts_bar",
+            "type": "radio",
+            "instructions": "Append subheader bar to this page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Yes",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5941030b7ce5d",
+            "label": "Subheader styles",
+            "name": "header_menu_contacts_bar_style",
+            "type": "radio",
+            "instructions": "Choose subheader style",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "custom": "Custom style"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5941040a97ec9",
+            "label": "Height",
+            "name": "header_menu_contacts_bar_height",
+            "type": "norebro_responsive_height",
+            "instructions": "Set up subheader height",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5941030b7ce5d",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59390deaf11d5",
+            "label": "Background color",
+            "name": "header_menu_contacts_bar_background",
+            "type": "norebro_color",
+            "instructions": "Choose background color for subheader",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5941030b7ce5d",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59390deaf159e",
+            "label": "Typography",
+            "name": "header_menu_contacts_bar_text_typo",
+            "type": "norebro_typo",
+            "instructions": "Set up typography for subheader",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5941030b7ce5d",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "add_theme_inherited": true
+        },
+        {
+            "key": "field_59390deaf1d7b",
+            "label": "Header Title",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59390deb00ef1",
+            "label": "Visibility",
+            "name": "header_use_hero",
+            "type": "radio",
+            "instructions": "Hide header title from this page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Yes, hide",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59390deb00733",
+            "label": "Fullscreen height",
+            "name": "header_height_fullscreen",
+            "type": "radio",
+            "instructions": "Enable fullscreen height for header title?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Yes",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59390deb00b09",
+            "label": "Height",
+            "name": "header_height",
+            "type": "norebro_responsive_height",
+            "instructions": "Set up header title height",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb00733",
+                        "operator": "!=",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_593ddebba2fcb",
+            "label": "Subtitle text",
+            "name": "header_subtitle",
+            "type": "text",
+            "instructions": "Custom subtitle text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59390deb0034e",
+            "label": "Content position",
+            "name": "header_title_align",
+            "type": "select",
+            "instructions": "Choose header title content position",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Inherit theme settings",
+                "left": "Left",
+                "center": "Center",
+                "right": "Right"
+            },
+            "default_value": [
+                "inherit"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59390deaf218a",
+            "label": "Background type",
+            "name": "header_background_type",
+            "type": "radio",
+            "instructions": "Choose background type for header title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "image": "Custom image",
+                "color": "Background color"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59390deaf2985",
+            "label": "Background image",
+            "name": "header_background_image",
+            "type": "image",
+            "instructions": "Upload background image for header title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deaf218a",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "preview_size": "thumbnail",
+            "library": "all",
+            "return_format": "url",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
+            "key": "field_59390deaf2d6e",
+            "label": "Background image size",
+            "name": "header_background_size",
+            "type": "select",
+            "instructions": "Choose background image size type",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deaf218a",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "auto": "Auto",
+                "cover": "Cover",
+                "contain": "Contain",
+                "100per": "100% 100%"
+            },
+            "default_value": [
+                "cover"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59390deaf3190",
+            "label": "Background image position",
+            "name": "header_background_position",
+            "type": "select",
+            "instructions": "Choose background image position",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deaf2d6e",
+                        "operator": "==",
+                        "value": "auto"
+                    },
+                    {
+                        "field": "field_59390deaf218a",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_59390deaf2d6e",
+                        "operator": "==",
+                        "value": "contain"
+                    },
+                    {
+                        "field": "field_59390deaf218a",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "center": "Center",
+                "left_top": "Left top",
+                "left_center": "Left center",
+                "left_bottom": "Left bottom",
+                "center_top": "Center top",
+                "center_bottom": "Center bottom",
+                "right_top": "Right top",
+                "right_center": "Right center",
+                "right_bottom": "Right bottom"
+            },
+            "default_value": [
+
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59390deaf355c",
+            "label": "Background image repeat",
+            "name": "header_background_repeat",
+            "type": "select",
+            "instructions": "Choose background image repeat type",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deaf2d6e",
+                        "operator": "==",
+                        "value": "auto"
+                    },
+                    {
+                        "field": "field_59390deaf218a",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_59390deaf2d6e",
+                        "operator": "==",
+                        "value": "contain"
+                    },
+                    {
+                        "field": "field_59390deaf218a",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "repeat": "Repeat",
+                "no_repeat": "No repeat",
+                "repeat_y": "Repeat only by Y",
+                "repeat_x": "Repeat only by X"
+            },
+            "default_value": [
+
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59390deaf2582",
+            "label": "Background color",
+            "name": "header_background_color",
+            "type": "norebro_color",
+            "instructions": "Choose background color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59390deaf3961",
+            "label": "Background overlay",
+            "name": "header_use_overlay",
+            "type": "radio",
+            "instructions": "Add colored overlay over background image?",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deaf218a",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Inherit theme settings",
+                "yes": "Yes",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59390deaf3d98",
+            "label": "Background overlay color",
+            "name": "header_overlay_color",
+            "type": "norebro_color",
+            "instructions": "Choose background overlay color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deaf218a",
+                        "operator": "==",
+                        "value": "image"
+                    },
+                    {
+                        "field": "field_59390deaf3961",
+                        "operator": "==",
+                        "value": "inherit"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_59390deaf218a",
+                        "operator": "==",
+                        "value": "image"
+                    },
+                    {
+                        "field": "field_59390deaf3961",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_593a55746376f",
+            "label": "Typography settings",
+            "name": "page_typography_settings",
+            "type": "radio",
+            "instructions": "Set up typography for header title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "custom": "Custom settings for this page"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_593a55d063770",
+            "label": "Title settings",
+            "name": "page_header_title_typo",
+            "type": "norebro_typo",
+            "instructions": "Set up typograhy for hero titles",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593a55746376f",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "add_theme_inherited": true
+        },
+        {
+            "key": "field_593a565163771",
+            "label": "Subtitle settings",
+            "name": "page_header_subtitle_typo",
+            "type": "norebro_typo",
+            "instructions": "Set up typograhy for subtitles",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593a55746376f",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "add_theme_inherited": true
+        },
+        {
+            "key": "field_593d61608bfd1",
+            "label": "Breadcrumbs",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59390deb03328",
+            "label": "Visibility",
+            "name": "page_show_breadcrumbs",
+            "type": "radio",
+            "instructions": "Show breadcrumbs on this page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Show",
+                "no": "Hide"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_593d618e8bfd2",
+            "label": "Breadcrumbs background color",
+            "name": "breadcrumbs_background_color",
+            "type": "norebro_color",
+            "instructions": "Choose breadcrumbs block background color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_593db13395d12",
+            "label": "Breadcrumbs text color",
+            "name": "breadcrumbs_text_color",
+            "type": "norebro_color",
+            "instructions": "Choose breadcrumbs text color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59390deb012f8",
+            "label": "Page",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+
+
+        {
+            "key": "field_59390deb03b1b",
+            "label": "Content wrapper",
+            "name": "page_is_wrapped",
+            "type": "radio",
+            "instructions": "Add content wrapper to this page",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb03738",
+                        "operator": "!=",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "With wrapper",
+                "no": "Without wrapper"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_591b10dbb4a82342342345623",
+            "label": "Content wrapper width size",
+            "name": "content_wrapper_width",
+            "type": "text",
+            "instructions": "Define container wrapper width <em>| Use CSS-units (1326px is default)</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 200
+        },
+        {
+            "key": "field_591b10dbb4a85_fwgaps_local",
+            "label": "Full width wrapper side margins size",
+            "name": "full_width_margins_size",
+            "type": "text",
+            "instructions": "Define side margins for full-width page container <em>| Use CSS-units (7% is default)</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 200
+        },
+        {
+            "key": "field_59390deb03f38",
+            "label": "Content padding",
+            "name": "page_add_top_padding",
+            "type": "radio",
+            "instructions": "Add top and bottom padding for page content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Add",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59390deb03738",
+            "label": "Boxed page layout",
+            "name": "page_use_boxed_wrapper",
+            "type": "radio",
+            "instructions": "Wrap this page in boxed container?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Yes",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "key": "field_59390deb0171e",
+            "label": "Background type",
+            "name": "page_background_type",
+            "type": "radio",
+            "instructions": "Select background type for page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "custom": "Custom image",
+                "color": "Custom color"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59390deb01b57",
+            "label": "Background image",
+            "name": "page_background_image",
+            "type": "image",
+            "instructions": "Custom background image",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb0171e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59390deb01f80",
+            "label": "Background image size",
+            "name": "page_background_size",
+            "type": "select",
+            "instructions": "Choose background image size type",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb0171e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "auto": "Auto",
+                "cover": "Cover",
+                "contain": "Contain",
+                "100per": "100% 100%"
+            },
+            "default_value": [
+                "auto"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59390deb02387",
+            "label": "Background image position",
+            "name": "page_background_position",
+            "type": "select",
+            "instructions": "Choose background image position",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb01f80",
+                        "operator": "==",
+                        "value": "auto"
+                    },
+                    {
+                        "field": "field_59390deb0171e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_59390deb01f80",
+                        "operator": "==",
+                        "value": "contain"
+                    },
+                    {
+                        "field": "field_59390deb0171e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "center": "Center",
+                "left_top": "Left top",
+                "left_center": "Left center",
+                "left_bottom": "Left bottom",
+                "center_top": "Center top",
+                "center_bottom": "Center bottom",
+                "right_top": "Right top",
+                "right_center": "Right center",
+                "right_bottom": "Right bottom"
+            },
+            "default_value": [
+
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59390deb02758",
+            "label": "Background image repeat",
+            "name": "page_background_repeat",
+            "type": "select",
+            "instructions": "Choose background image repeat type",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb01f80",
+                        "operator": "==",
+                        "value": "auto"
+                    },
+                    {
+                        "field": "field_59390deb0171e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_59390deb01f80",
+                        "operator": "==",
+                        "value": "contain"
+                    },
+                    {
+                        "field": "field_59390deb0171e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "repeat": "Repeat",
+                "no_repeat": "No repeat",
+                "repeat_y": "Repeat only by Y",
+                "repeat_x": "Repeat only by X"
+            },
+            "default_value": [
+
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59390deb02b58",
+            "label": "Background attachment",
+            "name": "page_background_is_attached",
+            "type": "true_false",
+            "instructions": "You can fix background image on this page",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb0171e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_59390deb02f35",
+            "label": "Background color",
+            "name": "page_background_color",
+            "type": "norebro_color",
+            "instructions": "Custom background color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59390deaf218b",
+            "label": "Sidebar",
+            "name": "page_sidebar",
+            "type": "select",
+            "instructions": "Choose sidebar placement for all pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "without": "Without sidebar",
+                "right": "Right",
+                "left": "Left"
+            },
+            "default_value": [
+                "inherit"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_592345234958934",
+            "label": "Sidebar layout",
+            "name": "page_sidebar_layout",
+            "type": "select",
+            "instructions": "Choose sidebar layout",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "simple": "Simple",
+                "boxed": "Boxed",
+                "boxed_offset": "Boxed offset"
+            },
+            "default_value": [
+                "inherit"
+            ],
+            "return_format": "value"
+        },
+        {
+            "key": "field_59390deb04364",
+            "label": "Footer",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59390deb06b99",
+            "label": "Visibility",
+            "name": "footer_hide",
+            "type": "radio",
+            "instructions": "Hide footer from this page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Hide footer from page",
+                "no": "Show"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59390deb06fd1",
+            "label": "Content wrapper",
+            "name": "footer_is_wrapped",
+            "type": "radio",
+            "instructions": "Add footer content wrapper?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "With wrapper",
+                "no": "Without wrapper"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5940ec917da19",
+            "label": "Content text color",
+            "name": "footer_text_color",
+            "type": "norebro_color",
+            "instructions": "Choose content text color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59390deb053ac",
+            "label": "Background type",
+            "name": "footer_background_type",
+            "type": "radio",
+            "instructions": "Choose footer background type",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "custom": "Custom image",
+                "color": "Custom color"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59390deb057c5",
+            "label": "Background image",
+            "name": "footer_background_image",
+            "type": "image",
+            "instructions": "Upload background image for footer",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb053ac",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": 1200,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59390deb05bcd",
+            "label": "Background size",
+            "name": "footer_background_size",
+            "type": "select",
+            "instructions": "Choose background image size type",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb053ac",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "auto": "Auto",
+                "cover": "Cover",
+                "contain": "Contain",
+                "100per": "100% 100%"
+            },
+            "default_value": [
+                "cover"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59390deb05fa2",
+            "label": "Background position",
+            "name": "footer_background_position",
+            "type": "select",
+            "instructions": "Choose background image position",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb053ac",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "center": "Center",
+                "left_top": "Left top",
+                "left_center": "Left center",
+                "left_bottom": "Left bottom",
+                "center_top": "Center top",
+                "center_bottom": "Center bottom",
+                "right_top": "Right top",
+                "right_center": "Right center",
+                "right_bottom": "Right bottom"
+            },
+            "default_value": [
+
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59390deb0638b",
+            "label": "Background repeat",
+            "name": "footer_background_repeat",
+            "type": "select",
+            "instructions": "Choose background image repeat type",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb053ac",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "repeat": "Repeat",
+                "no_repeat": "No repeat",
+                "repeat_x": "Repeat only by X",
+                "repeat_y": "Repeat only by Y"
+            },
+            "default_value": [
+                "repeat"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59390deb04f97",
+            "label": "Background color",
+            "name": "footer_background_color",
+            "type": "norebro_color",
+            "instructions": "Choose footer background color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb053ac",
+                        "operator": "!=",
+                        "value": "inherit"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59390deb04788",
+            "label": "Footer logo widget type",
+            "name": "footer_logo_widget_type",
+            "type": "select",
+            "instructions": "Choose widget logo type",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "light_variant": "Light variant logo",
+                "dark_variant": "Dark variant logo",
+                "sitename": "Text logo",
+                "custom": "Custom image"
+            },
+            "default_value": [
+                "inherit"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5940dfabfe181",
+            "label": "Footer site name settings",
+            "name": "footer_sitename_typo",
+            "type": "norebro_typo",
+            "instructions": "Custom settings for footer site name",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb04788",
+                        "operator": "==",
+                        "value": "sitename"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "add_theme_inherited": true
+        },
+        {
+            "key": "field_5940dfeafe182",
+            "label": "Footer custom logo image",
+            "name": "footer_custom_logo",
+            "type": "image",
+            "instructions": "Custom logo image in footer",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deb04788",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59391743def2b",
+            "label": "Sticky footer",
+            "name": "footer_as_sticky",
+            "type": "radio",
+            "instructions": "Set sticky (fixed) footer on this page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Yes",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5937a0a521s81ebmod23",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<h9>Copyright Section</h9>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59390dsb07397",
+            "label": "Copyright section visibility",
+            "name": "footer_show_copyright_section",
+            "type": "radio",
+            "instructions": "Show copyright section on this page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Theme settings inherited",
+                "yes": "Show",
+                "no": "Hide"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59390deb0778d",
+            "label": "Copyright section background",
+            "name": "footer_copyright_section_background",
+            "type": "norebro_color",
+            "instructions": "Choose section background color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59390deb07b67",
+            "label": "Copyright section text color",
+            "name": "footer_copyright_section_text_color",
+            "type": "norebro_color",
+            "instructions": "Choose section content text color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59390deb07b68",
+            "label": "Copyright section links color",
+            "name": "footer_copyright_section_links_color",
+            "type": "norebro_color",
+            "instructions": "Choose section content links color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59390deb07fa2",
+            "label": "Custom CSS",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59390deb083b5",
+            "label": "Custom CSS styles",
+            "name": "page_custom_css",
+            "type": "norebro_code",
+            "instructions": "Write your own stylesheet here",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "language": "css"
+        },
+        {
+            "key": "field_5937e0a52b456smod951",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p class=\"message\"><span class=\"icon ion-information-circled\"></span> <b>Note:</b> you won't lose the CSS code written here while updating the theme.</p>",
+            "new_lines": "",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 5,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "discussion",
+        "comments",
+        "author",
+        "format"
+    ],
+    "active": 1,
+    "description": ""
+}

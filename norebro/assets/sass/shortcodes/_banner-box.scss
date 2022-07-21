@@ -1,0 +1,294 @@
+.banner-box {
+	width: 100%;
+
+	.image-wrap {
+		margin-bottom: 20px;
+		display: block;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			min-width: 100%;
+			float: left;
+			transition: transform .3s ease-in-out;
+		}
+
+		.overlay {
+			box-shadow: 0 -150px 150px -70px rgba($color_dark, .8) inset;
+			padding: 30px;
+			opacity: 0;
+			transform: translateY(15px) rotateX(.25deg);
+			transition: .3s cubic-bezier(.2, 0, .2, 1.3);
+			transition-property: transform, opacity; 
+			vertical-align: bottom;
+
+		}
+
+		.btn {
+			position: relative;
+			top: 100%;
+			transform: translateY(-100%);
+		}
+	}
+
+	h4 {
+		margin: 5px 0;
+		font-size: 18px;
+	}
+
+	.subtitle {
+		margin: 0;
+	}
+	
+	.content {
+		border-bottom: 1px solid $color_border;
+		padding-bottom: 15px;
+	}	
+
+	&:hover {
+		.image-wrap {
+			img {
+				transform: scale(1.02);
+			}
+
+			.overlay {
+				opacity: 1;
+				transform: none;
+			}
+		}
+	}
+
+
+	&.boxed {
+		background: #fff;
+
+		.content {
+			border: none;
+			padding: 1px 30px 15px;
+		}
+	}
+
+	&.inner {
+
+		.overlay {
+			background: rgba(#444, .7);
+			opacity: 1;
+			transform: none;
+		}
+
+		h4, .description {
+			color: #fff;
+		}
+
+		.subtitle {
+			color: rgba(#fff, .7);
+		}
+
+		.content {
+			padding-bottom: 10px;
+			border-color: transparent;
+			transition: border .3s ease-in-out;
+		}
+
+		.btn {
+			position: absolute;
+			top: auto;
+			bottom: 30px;
+			transform: none;
+		}
+
+		&.text-center {
+			.btn {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+
+		&.text-right {
+			.btn {
+				left: auto;
+				right: 30px;
+			}
+		}
+
+		&.hover {
+
+			.overlay {
+				opacity: 0;
+				transform: scale(.95);
+			}
+
+			h4,
+			.description,
+			.subtitle,
+			.btn {
+				transform: translateY(10px);
+				opacity: 0;
+				transition: .3s cubic-bezier(.2, 0, .2, 1.3);
+				transition-property: opacity, transform;
+			}
+
+			&.text-center {
+				.btn {
+					transform: translate(-50%, 10px);
+				}
+			}
+
+			&:hover {
+				h4,
+				.description,
+				.subtitle,
+				.btn {
+					transform: none;
+					opacity: 1;
+				}
+
+				&.text-center {
+					.btn {
+						transform: translate(-50%, 0);
+					}
+				}
+
+				h4 {
+					transition-delay: .1s;
+				}
+				.subtitle {
+					transition-delay: .17s;
+				}
+				.description {
+					transition-delay: .25s;
+				}
+				.btn {
+					transition-delay: .35s;
+				}
+
+				.content {
+					border-color: rgba(#fff,.2);
+					transition-delay: .3s;
+				}
+
+				.overlay {
+					opacity: 1;
+					transform: none;
+				}
+			}
+		}
+	}
+
+	&.overlay-title {
+		.overlay {
+			opacity: 1;
+			transform: none;
+		}
+
+		h4 {
+			color: #fff;
+		}
+
+		.subtitle {
+			color: rgba(#fff,.7);
+		}
+
+		.title-wrap {
+			width: 100%;
+			transform: translateY(-100%);
+			margin-top: -20px;
+			padding: 30px 30px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 2;
+		}
+
+		.content {
+			padding: 0 30px;
+			position: relative;
+			border: none;
+		}
+
+		.btn {
+			margin-top: 10px;
+		}
+
+		&.hover {
+			.overlay {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+
+			.title-wrap {
+				transform: none;
+				position: relative;
+				margin: 0;
+				padding: 0 0 30px 0;
+				transition: .2s ease-in-out;
+				transition-property: transform, top;
+			}
+
+			h4, .subtitle {
+				color: $color_dark;
+				transition: color .2s ease-in-out;
+			}
+
+			.description-wrap {
+				//max-height: 0px;
+				position: relative;
+				padding: 0;
+				opacity: 0;
+				transition: .2s ease-in-out;
+				transition-property: transform, max-height, opacity, margin;
+			}
+
+			.description {
+				margin-top: 0;
+			}
+
+			&:hover {
+				.overlay {
+					opacity: 1;
+					transform: none;
+				}
+
+				.title-wrap {
+					transform: translateY(-100%);
+					top: -20px;
+				}
+
+				h4 {
+					color: #fff;
+				}
+				.subtitle {
+					color: rgba(#fff,.7);
+				}
+
+				.description-wrap {
+					max-height: 200px;
+					transform: none;
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px){
+		margin-bottom: 25px;
+
+		.image-wrap .overlay {
+			padding: 25px;
+		}
+	}
+
+	@media screen and (max-width: 1024px) and (min-width: 768px){
+		&.inner {
+			.image-wrap {
+				height: 350px;
+
+				img {
+					height: 100%;
+					width: auto;
+					max-width: none;
+				}
+			}
+		}
+	}
+}

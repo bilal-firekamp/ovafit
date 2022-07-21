@@ -1,0 +1,290 @@
+
+// Blog items wrappers
+.blog-posts-masonry,
+.blog-posts-classic {
+	margin-top: 30px;
+
+	&.with-sorting {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.blog-posts-masonry,
+	.blog-posts-classic {
+		margin-top: 0;
+	}
+}
+
+div.post-offset {
+	margin: 0;
+	padding: 0 !important;
+
+	article, 
+	.portfolio-item {
+		margin: 0;
+	}
+}
+
+// For firefox masonry
+div.vc_col-sm-2.blog-post-masonry {
+	width: 16.66%;
+}
+div.vc_col-sm-4.blog-post-masonry {
+	width: 33.2%;
+}
+div.vc_col-sm-8.blog-post-masonry {
+	width: 66.4%;
+}
+@media screen and (max-width: 767px) {
+	div.vc_col-sm-2.vc_col-xs-12.blog-post-masonry,
+	div.vc_col-sm-4.vc_col-xs-12.blog-post-masonry,
+	div.vc_col-sm-8.vc_col-xs-12.blog-post-masonry {
+		width: 100%;
+	}
+}
+
+
+article.blog-item,
+.blog-item {
+	width: 100%;
+	margin: 20px 0 10px;
+	position: relative;
+
+	@media screen and (max-width: 767px) {
+		margin-top: 15px;
+		margin-bottom: 0;
+	}
+
+	h3 {
+		text-align: inherit;
+	}
+
+	h3 a {
+		line-height: 1.3;
+		word-wrap: break-word;
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+
+	h3 span {
+		margin-right: 5px;
+		font-size: 20px;
+		opacity: .6;
+	}
+
+	.category a {
+		margin-top: 0;
+	}
+
+	.item-footer {
+		width: 100%;
+		min-height: 50px;
+		border-top: 1px solid rgba(0, 0, 0, 0.08);
+		line-height: 50px;
+		vertical-align: middle;
+
+		p {
+			margin: 0;
+			line-height: inherit;
+			vertical-align: middle;
+		}
+
+		&.top {
+			min-height: 50px;
+			line-height: 50px;
+			margin: 0;
+			border: none;
+		}
+	}
+
+	&.blog-item-hovering {
+		min-height: 200px;
+		color: #ffffff;
+
+		@include hovering-overlay("overlay");
+
+		.blog-item-image-wrap {
+			margin-bottom: 0;
+		}
+
+		.overlay {
+			background: rgba(52,52,52,.5);
+			visibility: visible;
+			opacity: 1;
+			transition-property: background;
+
+			&:hover {
+				background: rgba(52,52,52,.7);
+			}
+		}
+
+		.overlay,
+		footer {
+			padding: 25px;
+		}
+
+		.category a {
+			border-color: rgba(255,255,255,.5);
+			color: rgba(255,255,255,.7);
+		}
+
+		h3, h3 a, p {
+			color: inherit;
+		}
+
+		h3 {
+			@media screen and (max-width: 768px) {
+				max-width: 60%;
+				margin-left: 0px;
+			}
+		}
+
+		p {
+			color: #d9d9d9;
+		}
+
+		.item-footer {
+			&, &.top {
+				width: 100%;
+				line-height: 32px;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+		}
+	}
+
+	&.blog-item-boxed {
+		background: #ffffff;
+		transition: .2s ease-in-out;
+		transition-property: opacity, transform, box-shadow, z-index;
+		z-index: 1;
+
+		&:hover {
+			box-shadow: 0 5px 30px rgba(0, 0, 0, 0.12);
+			z-index: 2;
+		}
+
+		.blog-item-content,
+		.item-footer, .item-footer.top {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		.item-footer.top {
+			min-height: 50px;
+			line-height: 50px;
+		}
+	}
+
+	&.blog-item-shadow {
+		box-shadow: 0 5px 20px rgba(0,0,0,.06);
+	}
+}
+
+.blog-item-image-wrap {
+	@include clearfix();
+	
+	iframe {
+		width: 100%;
+		height: 230px;
+	}
+
+	img {
+		width: 100%;
+		float: left;
+	}
+}
+
+.blog-item-blockquote-wrap {
+	blockquote {
+		font-size: 18px;
+		margin: 0px;
+		padding-top: 5px;
+		line-height: 1.45;
+		border-top: none;
+		color: #222;
+
+		&:after {
+			margin-top: -15px;
+		}
+	}
+}
+
+.blog-item-content {
+	padding: 5% 0;
+
+	> :first-child {
+		margin-top: 0px;
+	}
+
+	> :last-child {
+		margin-bottom: 0px;
+	}
+}
+
+.blog-post {
+	margin: 30px 0; 
+
+	.blog-post-text {
+		p {
+			margin: 25px 0;
+		}
+	}
+}
+
+
+.blog-slider {
+	width: 100%;
+	padding: 0;
+
+	.owl-stage {
+		padding: 0;
+
+		.owl-item img {
+			width: 100%;
+		}
+	}
+
+	.owl-controls .owl-nav {
+		.owl-prev,
+		.owl-next {
+			background: #222;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			margin: 0;
+			top: 20px;
+			left: auto;
+			right: 20px;
+			font-size: 15px;
+		}
+
+		.owl-prev {
+			right: 54px;
+		}
+	}
+}
+
+.blog-posts-classic {
+	.blog-item h3 {
+		font-size: 24px;
+	}
+
+	.blog-item-content {
+		padding: 30px 0;
+	}
+
+	.blog-item.blog-item-boxed {
+		.blog-item-content,
+		footer.item-footer {
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+	}
+}

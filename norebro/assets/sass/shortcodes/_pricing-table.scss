@@ -1,0 +1,100 @@
+.pricing-table {
+	background: #f9f9f9;
+	width: 100%;
+	padding: 30px;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+
+	h3.title {
+		margin: 10px 0 0 0;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	> p.subtitle {
+		margin-top: 5px;
+		font-size: $font_small-size;
+	}
+
+	.price {
+		margin: 15px 0 0;
+		padding: 20px 0;
+		border-top: 1px solid rgba(#000,.07);
+
+		h2 {
+			display: inline-block;
+			font-size: 50px;
+			line-height: 50px;
+			margin: 0;
+			position: relative;
+
+			.icon {
+				position: absolute;
+				left: -22px;
+				top: 5px;
+				line-height: 25px;
+				font-size: 25px;
+			}
+		}
+
+		p.subtitle {
+			margin-top: 20px;
+		}
+	}
+
+	.time-interval {
+		background: #ebebeb;
+		border: none;
+		margin: 10px 0 0;
+	}
+
+	> .list-box {
+		margin: 0 0;
+	}
+
+	.list-box + .btn {
+		margin-top: 30px;
+	}
+	
+	.btn {
+		min-width: 140px;
+	}
+
+	.list-box {
+		li {
+			padding: 6px 0;
+
+			&, &:first-child {
+				border-color: rgba(#000,.07);
+			}
+
+			.icon {
+				font-size: 22px;
+				vertical-align: -3px;
+
+				& + .title {
+					margin-left: 5px;
+				}
+			}
+
+			&.disabled .title {
+				color: rgba($color_dark, .5);
+			}
+		}
+	}
+
+	&.features {
+		background: transparent;
+
+		h3 {
+			text-align: left;
+			margin: 0;
+			font-size: $font_main-size;
+		}
+
+		.list-box {
+			margin-top: 15px;
+		}
+	}
+}

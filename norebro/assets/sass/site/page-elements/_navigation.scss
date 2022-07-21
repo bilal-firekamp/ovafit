@@ -1,0 +1,162 @@
+.norebro-icon-grid {
+	transition: background .15s ease-in-out;
+
+	.icon {
+		width: 4px;
+		height: 4px;
+		border: 4px solid #545454;
+		border-left: none;
+		border-right: none;
+		box-sizing: content-box;
+		top: 19px;
+		left: 19px;
+
+		&:before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			border: inherit;
+			top: -4px;
+			left: 8px;
+			box-sizing: content-box;
+		}
+
+		&, &:before {
+			position: absolute;
+			transition: .15s ease-in-out;
+			transition-property: transform, height;
+		}
+	}
+
+	&:hover {
+		.icon {
+			height: 6px;
+			transform: translate3d(-1px, -1px, 0) rotate(.3deg);
+
+			&:before {
+				transform: translate3d(2px, 0, 0) rotate(.3deg);
+			}
+		}
+	}
+}
+
+
+.post-navigation {
+	background: #fff;
+	position: relative;
+
+	&.with-border-top {
+		border-top: 1px solid #f0f0f0;
+	}
+	&.with-border-bottom {
+		border-bottom: 1px solid #f0f0f0;
+	}
+	@media screen and (max-width: 991px) and (min-width: 768px){
+		.box-wrap{
+			&:nth-child(1){
+			 float: left;
+			}
+			&:nth-child(2){
+				float: right;
+			}
+		}
+	}
+	
+	.box-wrap > a {
+		width: 100%;
+		height: 90px;
+		display: block;
+
+		.icon {
+			width: 30px;
+			display: inline-block;
+			font-size: 21px;
+			vertical-align: 8px;
+		}
+
+		h4, .icon {
+			transition: .2s ease-in-out;
+			transition-property: color;
+		}
+
+		&:hover {
+			h4, .icon {
+				color: $color_brand;
+			}
+		}
+	}
+
+	.subtitle {
+		text-transform: uppercase;
+		margin-bottom: 5px;
+		font-size: $font_caption-size;
+	}
+
+	h4 {
+		margin: 0;
+		font-size: $font_small-size;
+	}
+
+	.content {
+		display: inline-block;
+	}
+
+	.grid {
+		background: #f3f3f3;
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		margin: -25px 0 0 -25px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		&:hover {
+			background: darken(#f3f3f3, 5%);
+		}
+	}
+
+	@media screen and (max-width: 768px){
+		.box-wrap {
+			width: 50%;
+			display: inline-block;
+			vertical-align: top;
+			float: left;
+		}
+		.box-wrap > a {
+			.icon {
+				vertical-align: 0px;	
+			}
+		}
+		.content {
+			display: none;
+		}
+	}
+}
+
+.onepage-navigation {
+	position: absolute;
+	bottom: 50px;
+	right: 40px;
+	z-index: 3;
+
+	.slider-nav div {
+		position: relative;
+	}
+
+	a {
+		float: left;
+		margin-right: 10px;
+	}
+
+	.norebro-icon-grid .icon {
+		&, &:after {
+			border-color: #fff;
+			border-radius: 0;
+		}
+	}
+	@media screen and (max-width: 769px){
+		bottom: 25px;
+		right: 15px;
+	}
+}

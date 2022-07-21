@@ -1,0 +1,71 @@
+@mixin hovering-overlay($overlay){
+	.#{$overlay} {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		visibility: hidden;
+		transition: .2s ease-in-out;
+		transition-property: opacity, visibility;
+	}
+
+	&:hover {
+		.#{$overlay} {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+@mixin clearfix(){
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin animate($property: all, $ease: $transition_function, $duration: .25s) {
+	-webkit-transition: $property $ease $duration;
+	-moz-transition: $property $ease $duration;
+	-o-transition: $property $ease $duration;
+	transition: $property $ease $duration;
+}
+
+@mixin sm_screen {
+	@media screen and (max-width: 768px) {
+		@content;	
+	}
+}
+
+@mixin md_screen {
+	@media screen and (min-width: 769px) {
+		@content;	
+	}
+}
+
+@mixin lg_screen {
+	@media screen and (min-width: 1025px) {
+		@content;	
+	}
+}
+
+@mixin xl_screen {
+	@media screen and (min-width: 1200px) {
+		@content;	
+	}
+}
+
+@mixin tablet_screen {
+	@media screen and (max-width: 1024px) {
+		@content;	
+	}
+}
+
+@mixin vc_sm_screen {
+	@media screen and (max-width: 991px) {
+		@content;	
+	}
+}

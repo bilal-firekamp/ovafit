@@ -1,0 +1,131 @@
+.widget {
+	margin: 0;
+	padding: 50px 0 0;
+	list-style: none;
+	max-width: 400px;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+
+	ul {
+		margin-left: 0;
+	}
+
+	h3 {
+		font-size: $font_main-size;
+	}
+
+	h4 {
+		@extend h4.title;
+	}
+
+	h5 {
+		@extend h5.title;
+	}
+
+	h4, h5 {
+		line-height: 1.6;
+	}
+}
+
+h3.widget-title {
+	text-align: inherit;
+	font-size: $font_main-size;
+	margin: 0 0 30px;
+}
+
+@media screen and (max-width: 991px) {
+	.widget {
+		padding: 15px 0;
+	}
+
+	.widget-title {
+		margin-bottom: 20px;
+	}
+}
+
+section.widget:first-child {
+	.widget-title {
+		margin-top: 5px;
+	}
+}
+
+@mixin widget-list-box(){
+	@extend .list-box;
+
+	font-size: $font_small-size;
+
+	h3.title {
+		margin-bottom: 25px;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		padding-left: 0;
+		padding: 5px 0;
+
+		&:after {
+			display: none;
+		}
+	}
+
+	> ul > li {
+		&:first-child {
+			padding-top: 0;
+		}
+	}
+
+	.children {
+		margin-top: 5px;
+	}
+
+	a {
+		margin-right: 5px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.widget {
+	line-height: 1.6;
+	
+	&, p, .subtitle {
+		color: #8b8b92;
+	}
+}
+
+
+.site-footer .widget {
+	&, p, .subtitle {
+		color: rgba(#fff,.4);
+	}
+
+	a {
+		color: #bcbcbc;
+	}
+
+	.widget-title {
+		color: #fff;
+	}
+
+	a:hover, h3 a, h4 a {
+		color: #bcbcbc;
+	}
+
+	ul li,
+	ul li:first-child {
+		border-color: rgba(#ffffff, .15);
+	}
+}
+
+
+@import 'standart-widgets';
+@import 'theme-widgets';
+@import 'woo-widgets';

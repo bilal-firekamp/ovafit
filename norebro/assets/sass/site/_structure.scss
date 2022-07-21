@@ -1,0 +1,157 @@
+
+
+.norebro-with-panel #page, 
+.norebro-with-panel .site-footer {
+	margin-left: 75px;
+
+	@media screen and (max-width: 1024px) and (min-width: 769px) {
+		margin-left: 70px;
+	}
+
+	@media screen and (max-width: 1350px) and (min-width: 1024px) {
+		.page-container {
+			margin: 0 15px;
+		}
+	}
+}
+
+.norebro-with-header-6 {
+	#page {
+		margin-left: 280px;
+	}
+
+	&.norebro-with-panel #page {
+		margin-left: 359px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.norebro-with-header-6 #page,
+	.norebro-with-header-6.norebro-with-panel #page,
+	.norebro-with-panel #page,
+	.norebro-with-panel .site-footer {
+		margin-left: 0;
+	}
+}
+
+.norebro-with-header-6 {
+	.site-footer {
+		padding-left: 280px;
+	}
+
+	&.norebro-with-panel .site-footer {
+		padding-left: 359px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.norebro-with-header-6 #page,
+	.norebro-with-header-6.norebro-with-panel #page,
+	.norebro-with-panel #page,
+	.norebro-with-panel .site-footer,
+	 .norebro-with-header-6 .site-footer{
+		padding-left: 0;
+	}
+}
+
+.page-container {
+	max-width: 1326px;
+	margin: 0 auto; 
+	padding: 0;
+	position: relative;
+
+	&.full {
+		max-width: none;
+		padding: 0 7%;
+	}
+
+	&.without-breadcrumbs {
+		margin-top: 80px;
+	}
+
+	&.bottom-offset {
+		margin-bottom: 80px;
+	}
+
+	&:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+
+	@media screen and (max-width: 1440px) {
+		max-width: 1226px;
+	}
+
+	@media screen and (max-width: 1024px) and (min-width: 769px) {
+		max-width: 898px;
+	}
+}
+
+.boxed-container {
+	max-width: 1326px;
+	margin: 30px auto;
+	z-index: 2;
+	position: relative;
+	overflow: hidden;
+}
+
+.page-content {
+	width: 100%;
+	float: left;
+	padding: 0 15px;
+
+	&.with-left-sidebar {
+		width: 72%;
+		padding-left: 45px;
+		float: right;
+	}
+
+	&.with-right-sidebar {
+		width: 72%;
+		padding-right: 45px;
+		float: left;
+	}
+}
+
+#page {
+	position: relative;
+	overflow-x: hidden;
+}
+
+body.search {
+	.masonry-block > * {
+		margin-bottom: 30px;
+	}
+
+	.clear {
+		margin-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.page-container {
+		&, &.full {
+			padding: 0 25px;
+		}
+		&.without-breadcrumbs {
+			margin-top: 30px;
+		}
+		&.bottom-offset {
+			margin-bottom: 30px;
+		}
+	}
+
+	.boxed-container {
+		margin: 0;
+	}
+
+	.page-content {
+		&, &.with-right-sidebar,
+		&.with-left-sidebar {
+			width: 100%;
+			padding: 0;
+			float: none;
+		}
+	}	
+}

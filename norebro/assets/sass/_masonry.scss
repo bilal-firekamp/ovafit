@@ -1,0 +1,18 @@
+.norebro-masonry {
+	transition: .3s ease-in-out;
+	transition-property: height;
+}
+
+// Masonry percentage bug
+/*div.masonry-block {
+	margin-right: -1px;
+}*/
+/*.vc_col-lg-8.masonry-block {
+	width: 66.665%;
+	width: calc(100%);
+}*/
+@media screen and (max-width: 768px){
+	.vc_col-lg-8.masonry-block {
+		width: auto;
+	}
+}

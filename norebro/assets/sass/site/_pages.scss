@@ -1,0 +1,193 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.site-content {
+	background: #fff;
+	overflow: hidden;
+}
+
+
+/*--------------------------------------------------------------
+## Error page
+--------------------------------------------------------------*/
+.page-error {
+	max-width: 800px;
+	padding: 80px 0 80px;
+	margin: 0 auto;
+	text-align: center;
+
+	.icon-shape {
+		background: #f3f3f3;
+		width: 110px;
+		height: 110px;
+		line-height: 115px;
+		border-radius: 50%;
+		text-align: center;
+		vertical-align: top;
+		font-size: 40px;
+		display: inline-block;
+
+		i {
+			color: $color_dark;
+			vertical-align: 0;
+		}
+	}
+
+	.page-error-content {
+		width: 100%;
+		text-align: center;
+		padding: 20px 25px 0;
+		position: relative;
+	}
+
+	h1.title {
+		color: rgba(0,0,0,.05);
+		width: 100%;
+		text-align: center;
+		font-size: 220px;
+		letter-spacing: -0.05em;
+		position: absolute;
+		top: -110px;
+		left: 0;
+		user-select: none;
+	}
+
+	h3, p, a.btn{
+		position: relative;
+		z-index: 2;
+	}
+
+	h3 {
+		margin-top: 4px;
+		font-size: 18px;
+	}
+
+	a,
+	a:visited {
+		margin-top: 25px;
+	}
+
+	form.search {
+		margin: 100px auto 0;
+		max-width: 500px;
+		padding: 0 15px;
+		position: relative;
+		z-index: 2;
+
+		button {
+			background: transparent;
+			border: none;
+			padding: 5px;
+			margin: 0;
+			color: #343436;
+			position: absolute;
+			top: 8px;
+			right: 15px;
+			font-size: $font_main-size;
+
+			&:hover {
+				opacity: .8;
+			}
+		}
+	}
+
+	a.btn {
+		margin-top: 60px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.page-error {
+		padding: 30px 0 80px;
+	}
+}
+
+.error-404 .page-error {
+	padding-top: 120px;
+}
+
+
+.no-result {
+	text-align: center;
+	overflow: hidden;
+	padding-bottom: 20px;
+
+	h1 {
+		font-size: 18px;
+		font-weight: 600;
+		margin: 20px 0 8px;
+	}
+
+	p {
+		margin-top: 0;
+		color: #616161;
+	}
+
+	form.search {
+		margin-top: 25px;
+	}
+}
+
+/*--------------------------------------------------------------
+## Authorization page
+--------------------------------------------------------------*/
+.page-auth {
+	background: #444 url('./images/bg-full.jpg');
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	// overlay
+	&:before {
+		content: '';
+		background: rgba(52,52,54,.75);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.page-auth-wrap {
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		form {
+			background: #ffffff;
+			width: 460px;
+			margin: 0 auto;
+			padding: 60px;
+
+			input {
+				margin-bottom: 15px;
+			}
+
+			button.btn {
+				margin-top: 0px;
+			}
+		}
+	}
+}
+
+
+
+
+.post-password-form {
+	margin: 90px 0;
+}

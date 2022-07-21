@@ -1,0 +1,438 @@
+{
+    "key": "group_594d60af343c5",
+    "title": "Theme Styling",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_54224ad4313bf",
+            "label": "Theme Colors",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5937e0a52b48cexmod152",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p class=\"message\"><span class=\"icon ion-information-circled\"></span> <b>Note:</b> these settings apply to all elements of your website.</p>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_591ac509cfa00",
+            "label": "Brand color",
+            "name": "global_page_brand_color",
+            "type": "norebro_color",
+            "instructions": "Choose the accent color for your website",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5937e3a43b38cexmod15",
+            "label": "Links color",
+            "name": "global_page_links_color",
+            "type": "norebro_color",
+            "instructions": "Choose the color for your website links",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5937e3a43b3823575",
+            "label": "Buttons color",
+            "name": "global_page_buttons_color",
+            "type": "norebro_color",
+            "instructions": "Choose the global buttons color for your site",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5937e3a33b35exmod15",
+            "label": "Borders color",
+            "name": "global_page_borders_color",
+            "type": "norebro_color",
+            "instructions": "Choose the color for your website borders",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_54224ad4314bf",
+            "label": "Preloader",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_591ac509d3e51",
+            "label": "Preloader",
+            "name": "global_page_preloader",
+            "type": "true_false",
+            "instructions": "Enable preloader animation",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_59151w509d3e51",
+            "label": "Preloader on mobile",
+            "name": "global_page_mobile_preloader",
+            "type": "true_false",
+            "instructions": "Enable preloader animation on mobile devices",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_5937e3a3234324234",
+            "label": "Preloader type",
+            "name": "global_preloader_type",
+            "type": "image_option",
+            "instructions": "Choose loading image for website preloader",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "ball_beat",
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "image_option_value": [
+                {
+                    "name": "ball_beat",
+                    "description": "Ball Beat",
+                    "src": "acf__image_41.svg"
+                },
+                {
+                    "name": "ball_fall",
+                    "description": "Ball Fall",
+                    "src": "acf__image_42.svg"
+                },
+                {
+                    "name": "ball_scale_pulse",
+                    "description": "Ball Scale Pulse",
+                    "src": "acf__image_45.svg"
+                },
+                {
+                    "name": "ball_scale_ripple",
+                    "description": "Ball Scale Ripple",
+                    "src": "acf__image_46.svg"
+                },
+                {
+                    "name": "ball_clip_rotate",
+                    "description": "Ball Clip Rotate",
+                    "src": "acf__image_50.svg"
+                },
+                {
+                    "name": "line_scale",
+                    "description": "Line Scale",
+                    "src": "acf__image_47.svg"
+                },
+                {
+                    "name": "line_spin_clockwise_fade",
+                    "description": "Line Spin Clockwise Fade",
+                    "src": "acf__image_48.svg"
+                },
+                {
+                    "name": "square_loader",
+                    "description": "Square Loader",
+                    "src": "acf__image_49.svg"
+                },
+                {
+                    "name": "custom_loader",
+                    "description": "Custom",
+                    "src": "acf__image_inherited.svg"
+                }
+            ],
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5rqsf22dd92771",
+            "label": "Custom preloader:",
+            "name": "global_custom_preloader",
+            "type": "image",
+            "instructions": "Upload your preloader image",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5937e3a3234324234",
+                        "operator": "==",
+                        "value": "custom_loader"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_592d5938aee39",
+            "label": "Preloader accent color",
+            "name": "global_preloader_shapes_color",
+            "type": "norebro_color",
+            "instructions": "Choose color for preloader shape",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_592d4579aee38",
+            "label": "Preloader background color",
+            "name": "global_preloader_background_color",
+            "type": "norebro_color",
+            "instructions": "Set background color for preloader",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_54224ad4315bf",
+            "label": "Sidebar",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59392223423434234c",
+            "label": "Sidebar layout",
+            "name": "global_page_sidebar_layout",
+            "type": "select",
+            "instructions": "Choose sidebar layout",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "simple": "Simple",
+                "boxed": "Boxed",
+                "boxed_offset": "Boxed offset"
+            },
+            "default_value": [
+                "boxed_offset"
+            ],
+            "return_format": "value"
+        },
+        {
+            "key": "field_5937e3a33b3exmod15",
+            "label": "Widget heading",
+            "name": "global_widgets_heading_typo",
+            "type": "norebro_typo",
+            "instructions": "Set up typography styles for widget heading",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "add_theme_inherited": true
+        },
+        {
+            "key": "field_5937e3a33f4exmod15",
+            "label": "Widget content",
+            "name": "global_widgets_content_typo",
+            "type": "norebro_typo",
+            "instructions": "Set up typography styles for widget content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "add_theme_inherited": true
+        },
+        {
+            "key": "field_54224ad4316bf",
+            "label": "Other Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_591ac509d3a3e",
+            "label": "Smooth scroll",
+            "name": "global_page_smooth_scroll",
+            "type": "true_false",
+            "instructions": "Enable smooth scroll effect on your website",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No",
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_591ac509d4234",
+            "label": "Scroll to top",
+            "name": "global_page_show_arrow",
+            "type": "true_false",
+            "instructions": "Show scroll to top arrow on all pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_591ac509d465a",
+            "label": "Scroll to top color",
+            "name": "global_page_arrow_color",
+            "type": "norebro_color",
+            "instructions": "Choose background color for scroll to top button",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_591ac509d4234",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-styling"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

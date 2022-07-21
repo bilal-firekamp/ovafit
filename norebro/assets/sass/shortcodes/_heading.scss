@@ -1,0 +1,20 @@
+.heading {
+	.title,
+	.subtitle {
+		margin: 12px 0;
+	}
+
+	*:first-child {
+		margin-top: 0 !important;
+	}
+
+	*:last-child {
+		margin-bottom: 0 !important;
+	}
+
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
