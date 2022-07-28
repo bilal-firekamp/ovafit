@@ -63,7 +63,7 @@ if (!defined('ABSPATH')) {
 									</td>
 
 									<td class="product-name" data-title="<?php esc_html_e('Product', 'norebro'); ?>">
-										<h4 class="second-title text-left">
+										<h4 class="title text-left">
 											<?php
 											if (!$product_permalink) {
 												echo apply_filters('woocommerce_cart_item_name', get_post($_product->get_id())->post_title, $cart_item, $cart_item_key) . '&nbsp;';
