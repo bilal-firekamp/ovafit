@@ -31,6 +31,7 @@ function wp_lost_password()
 add_shortcode('lost-password', 'wp_lost_password');
 
 
+
 add_action('woocommerce_thankyou', 'bbloomer_redirectcustom');
 
 

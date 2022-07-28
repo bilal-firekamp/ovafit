@@ -34,7 +34,7 @@ if (is_user_logged_in()) {
 
 	<div class="vc_row fields">
 		<div class="vc_col-md-6">
-			<input type="text" class="input-text" name="username" id="username" placeholder="Username" />
+			<input type="text" class="input-text" name="username" id="username" placeholder="Username or Email" />
 		</div>
 		<div class="vc_col-md-6">
 			<input class="input-text" type="password" name="password" id="password" placeholder="Password" />
@@ -49,7 +49,7 @@ if (is_user_logged_in()) {
 	<p class="lost_password">
 		<a href="<?php echo esc_url(wp_lostpassword_url()); ?>"><?php esc_html_e('Lost your password?', 'norebro'); ?></a>
 	</p>
-	<p class="form-row">
+	<p class="form-row text-left">
 		<?php wp_nonce_field('woocommerce-login'); ?>
 		<input type="submit" class="btn" name="login" value="<?php esc_attr_e('Login', 'norebro'); ?>" />
 		<input type="hidden" name="redirect" value="<?php echo esc_url($redirect) ?>" />

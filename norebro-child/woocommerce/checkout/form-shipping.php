@@ -27,13 +27,13 @@ if (!defined('ABSPATH')) {
 
 		<h3 class="second-title text-left left"><?php esc_html_e('Where Should We Send the Order?', 'norebro'); ?></h3>
 		<p id="ship-to-different-address" class="ship-to-different right">
-			<input id="ship-to-different-address-checkbox" class="input-checkbox" <?php checked(apply_filters('woocommerce_ship_to_different_address_checked', 'shipping' === get_option('woocommerce_ship_to_destination') ? 1 : 0), 1); ?> type="checkbox" name="ship_to_different_address" value="1" />
-			<label for="ship-to-different-address-checkbox" class="checkbox"><?php esc_html_e('Ship to a different address?', 'norebro'); ?></label>
+			<input id="ship-to-different-address-checkbox" class="input-checkbox" onclick="SetBilling(this.checked);" type="checkbox" name="ship_to_different_address" value="1" />
+			<label for="ship-to-different-address-checkbox" class="checkbox"><?php esc_html_e('My billing and shipping address are the same.', 'norebro'); ?></label>
 		</p>
 
 		<div class="clear"></div>
 
-		<div class="shipping_address">
+		<div class="shipping_address1" id="deliveryaddres">
 
 			<?php do_action('woocommerce_before_checkout_shipping_form', $checkout); ?>
 
@@ -51,6 +51,15 @@ if (!defined('ABSPATH')) {
 			<?php do_action('woocommerce_after_checkout_shipping_form', $checkout); ?>
 
 		</div>
+		<script>
+			function SetBilling(checked) {
+				if (checked) {
+					document.getElementById('deliveryaddres').style.display = "none";
+				} else {
+					document.getElementById('deliveryaddres').style.display = "block";
+				}
+			}
+		</script>
 
 	<?php endif; ?>
 
