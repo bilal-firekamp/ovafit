@@ -23,6 +23,12 @@ jQuery(function ($) {
 	});
 	jQuery(document).on('click','.preorder-close-btn', function() {	
 		$('.preorder-custom-model-main').hide();
-	});
-	
+	});	
+	jQuery(document).on('click','.close__popup', function() {	
+		$('.custom-model-main').fadeOut();
+	});	
+	jQuery(document).on('click','.learn_checkout_popup', function() {	
+		$('.custom-model-main').css('display','flex');
+	});	
+
 });

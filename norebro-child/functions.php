@@ -116,6 +116,31 @@ function get_hello_bar(){
 	}
 }
 
+
+/**
+ * Add country based notification text on checkout
+ */
+function notification_text_on_checkout() { 
+	if( function_exists( 'geot_target' ) ) { 
+	if( geot_target( 'US' ) ) { ?>
+	<script type="text/javascript">
+		jQuery(function ($) {
+	   $("#billing_state_field").append("<small>Located outside of US? <a href='javascript:void(0);' class='learn_checkout_popup'>Learn</a> how to get your order delivered.</small>");
+	});
+	</script>
+	<?php 
+	   } else { ?>
+	<script type="text/javascript">
+	jQuery(function ($) {
+		$("#billing_state_field").append("<small>Located outside of US? <a href='javascript:void(0);' class='learn_checkout_popup'>Learn</a> how to get your order delivered.</small>");
+	});
+	</script>
+	<?php }
+	} 
+}
+add_action('wp_head', 'notification_text_on_checkout');
+
+
 /**
  * Add custom preorder popup for home page only as per country wise
  */
