@@ -79,13 +79,14 @@ defined('ABSPATH') || exit;
 				</tr>
 			<?php endforeach; ?>
 
-			<?php if (wc_tax_enabled() && 'excl' === WC()->cart->get_tax_price_display_mode) : ?>
-				<?php if ('itemized' === get_option('woocommerce_tax_total_display')) : ?>
+
+		<?php if ( wc_tax_enabled() && ! WC()->cart->display_prices_including_tax() ) : ?>
+			<?php if ( 'itemized' === get_option( 'woocommerce_tax_total_display' ) ) : ?>
 					<?php foreach (WC()->cart->get_tax_totals() as $code => $tax) : ?>
-						<tr class="tax-rate tax-rate-<?php echo sanitize_title($code); ?>">
-							<th><?php echo wp_kses($tax->label, 'post'); ?></th>
-							<td><?php echo wp_kses($tax->formatted_amount, 'post'); ?></td>
-						</tr>
+					<tr class="tax-rate tax-rate-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
+						<th><?php echo esc_html( $tax->label ); ?></th>
+						<td><?php echo wp_kses_post( $tax->formatted_amount ); ?></td>
+					</tr>
 					<?php endforeach; ?>
 				<?php else : ?>
 					<tr class="tax-total">

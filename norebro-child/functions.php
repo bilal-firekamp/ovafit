@@ -1,4 +1,3 @@
-
 <?php
 
 add_action('wp_enqueue_scripts', 'norebro_child_local_enqueue_parent_styles');
@@ -209,4 +208,60 @@ function get_dynamic_orderno(){
 		$order_id     = "#".$last_order->get_id(); // Get the order id
 	}
 	return $order_id;
+}
+
+add_action('woocommerce_checkout_order_processed', 'kit_payment_complete', 10, 1);
+
+function kit_payment_complete( $order_id ){
+	$status = 'wc-completed';
+	$order_count = wp_count_posts( 'shop_order' )->$status;
+	$order = wc_get_order( $order_id );
+	$billingEmail = $order->get_billing_email();
+	$billingCountry = $order->get_billing_country();
+	$isSubscription = false;
+	foreach ($order->get_items() as $item_id => $item ) {
+		$product = $item->get_product();
+		if ( class_exists( 'WC_Subscriptions_Product' ) && WC_Subscriptions_Product::is_subscription( $product ) ) {
+			$isSubscription = true;
+		}
+	}
+	
+	// Create tags for email
+	$url = 'https://api.convertkit.com/v3/tags/3344038/subscribe';
+	$tags = array();
+	
+	if ($order_count < 100) {
+		array_push($tags, 3343876);
+	}
+	
+	if ($billingCountry == 'US') {
+		array_push($tags, 3344035);
+	} else {
+		array_push($tags, 3344034);
+	}
+	
+	if ($isSubscription) {
+		array_push($tags, 3344037);
+	} else {
+		array_push($tags, 3344036);
+	}
+	
+	$body = array(
+		'api_secret' => '66di68vayLr8pWt1Mi6EfBrDHr0cuzNMcO5AizfUMX4',
+		'email' => $billingEmail,
+		'tags' => $tags
+	);
+	$args = array(
+		'blocking'    => true,
+        'method'      => 'POST',
+        'timeout'     => 45,
+		'sslverify'   => false,
+        'headers'     => array(
+            'Content-Type'  => 'application/json',
+        ),
+        'body' => wp_json_encode($body),
+    );
+	
+	$response = wp_remote_post($url, $args);
+	
 }
