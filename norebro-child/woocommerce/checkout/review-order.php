@@ -34,7 +34,7 @@ defined('ABSPATH') || exit;
 						<td class="product-name">
 							<?php echo apply_filters('woocommerce_cart_item_name', get_post($_product->get_id())->post_title, $cart_item, $cart_item_key) . '&nbsp;'; ?>
 							<?php echo apply_filters('woocommerce_checkout_cart_item_quantity', ' <strong class="product-quantity">' . sprintf('&times; %s', $cart_item['quantity']) . '</strong>', $cart_item, $cart_item_key); ?>
-							<?php echo wc_get_formatted_cart_item_data($cart_item); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+							<?php echo wc_get_formatted_cart_item_data($cart_item); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 							?>
 						</td>
 						<td class="product-total">
@@ -102,7 +102,7 @@ defined('ABSPATH') || exit;
 				<td><?php wc_cart_totals_order_total_html(); ?></td>
 			</tr>
 
-			<!-- <?php do_action('woocommerce_review_order_after_order_total'); ?> -->
+			<?php do_action('woocommerce_review_order_after_order_total'); ?>
 
 		</tfoot>
 	</table>

@@ -17,3 +17,195 @@ Use it to make something cool, have fun, and share what you've learned with othe
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
+
+@font-face {
+  font-family: "MADE TOMMY BOLD";
+  src: url("/wp-content/themes/norebro-child/MADETOMMYBold_PERSONALUSE.otf");
+}
+@font-face {
+  font-family: "MADE TOMMY MED";
+  src: url("/wp-content/themes/norebro-child/MADETOMMYMedium_PERSOALUSE.otf");
+}
+@font-face {
+  font-family: "MADE TOMMY REG";
+  src: url("/wp-content/themes/norebro-child/MADETOMMYRegular_PERSOALUSE.otf");
+}
+
+#masthead .header-wrap {
+  background: #fff !important;
+}
+.header-hello-bar {
+  display: flex;
+  color: #000;
+  background: #d3e8c2;
+  text-align: center;
+  align-items: center;
+  padding: 16px 20px;
+  width: 100%;
+  position: relative;
+}
+.header-hello-bar p {
+  margin: 0;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+}
+.pre-order-close_bar {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  bottom: 0;
+  display: contents;
+}
+.preorder-custom-model-main {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  visibility: visible;
+  overflow: auto;
+  align-items: center;
+  opacity: 1;
+  z-index: 999;
+}
+.preorder-custom-model-wrap {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  max-width: 760px;
+  margin: 100px auto;
+  background: #fff;
+  border-radius: 0px;
+  overflow: hidden;
+  -moz-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 50px 0 rgb(0 0 0 / 50%);
+  box-shadow: 0 0 50px 0 rgb(0 0 0 / 50%);
+  padding: 60px 80px;
+  text-align: center;
+  border-radius: 24px;
+}
+.preorder-close-btn.close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 60px;
+  font-weight: 100;
+  color: #d1d1d1;
+}
+.preorder-pop-up-content-wrap h3 {
+  font-family: "MADE TOMMY MED";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #89ac81;
+}
+.preorder-pop-up-content-wrap .subtitle {
+  font-style: normal;
+  font-family: "MADE TOMMY MED";
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #948d85;
+  margin-bottom: 30px;
+  margin-top: 0;
+  display: block;
+}
+.preorder-pop-up-content-wrap p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  color: #000000;
+}
+.preorder-pop-up-content-wrap p.subject-last {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.preorder-pop-up-content-wrap .last-tag {
+  margin-bottom: 30px;
+}
+.preorder-pop-up-content-wrap .preorder-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+  background: #d3e8c2;
+  border-radius: 62px;
+  padding: 12px 50px;
+  display: inline-block;
+}
+.preorder-pop-up-content-wrap .preorder-btn:hover {
+  text-decoration: none;
+}
+.learn_more {
+  text-decoration: underline;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 767px) {
+  .header-hello-bar {
+    padding: 10px 15px;
+  }
+  .header-hello-bar p {
+    font-size: 15px;
+    line-height: 22px;
+    border-radius: 24px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .preorder-custom-model-wrap {
+    padding: 40px 20px;
+  }
+  .preorder-pop-up-content-wrap h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .preorder-pop-up-content-wrap p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .preorder-pop-up-content-wrap .subtitle {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .preorder-custom-model-wrap {
+    padding: 40px 15px;
+  }
+  .preorder-pop-up-content-wrap h3 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .preorder-close-btn.close {
+    right: 15px;
+    top: 15px;
+    font-size: 50px;
+  }
+  .preorder-custom-model-wrap {
+    margin: 80px 5px;
+  }
+  .header-hello-bar {
+    padding: 10px;
+  }
+}

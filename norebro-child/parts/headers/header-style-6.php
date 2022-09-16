@@ -21,6 +21,9 @@
 <header id="masthead" class="site-header dark-text header-6<?php echo esc_attr($header_classes); ?>"
 <?php if ( $mobile_is_fixed ) { echo ' data-mobile-header-fixed="true"'; } ?>
 <?php if ( $fixed_initial_offset ) { echo ' data-fixed-initial-offset="' . $fixed_initial_offset . '"'; } ?>>
+	<?php if(is_front_page()){?>
+		<?php echo get_hello_bar();?>
+	<?php }?>
 	<div class="header-wrap">
 		<?php get_template_part( 'parts/elements/header-menu-logo' ); ?>
 		<div class="right">
@@ -34,7 +37,7 @@
 		</div>
 		<div class="close-menu"></div>
 	</div><!-- .header-wrap -->
-
+	
 	<div class="header-bottom">
 		<p class="copyright">
 			<?php echo NorebroSettings::get( 'footer_copyright_left', 'global' ); ?>

@@ -39,21 +39,9 @@ if ($dropdown_carets_visibility == false) {
 	<div class="close">
 		<i class="icon ion-android-close"></i>
 	</div>
+	
 	<div id="mega-menu-wrap">
-		<ul>
-			<li>
-				<a href="/my-account">
-					<?php
-					if (is_user_logged_in()) {
-						echo 'My Account';
-					} else {
-						echo 'Login';
-					}
-					?>
-				</a>
-
-			</li>
-		</ul>
+	
 		<?php
 		$page_menu_type = NorebroSettings::get('menu_type');
 		if (in_array($page_menu_type, array('inherit', NULL))) {
@@ -266,3 +254,17 @@ if ($dropdown_carets_visibility == false) {
 
 	</ul>
 </nav>
+<ul class="my__account">
+			<li>
+				<a href="/my-account">
+					<?php
+					if (is_user_logged_in()) {
+						echo 'My Account';
+					} else {
+						echo 'Login';
+					}
+					?>
+				</a>
+
+			</li>
+		</ul>

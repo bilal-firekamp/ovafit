@@ -29,6 +29,9 @@
 	<?php if ( $is_fixed ) { echo ' data-header-fixed="true"'; } ?>
 <?php if ( $mobile_is_fixed ) { echo ' data-mobile-header-fixed="true"'; } ?>
 <?php if ( $fixed_initial_offset ) { echo ' data-fixed-initial-offset="' . $fixed_initial_offset . '"'; } ?>>
+	<?php if(is_front_page()){?>
+		<?php echo get_hello_bar();?>
+	<?php }?>
 	<div class="header-wrap">
 		
 		<?php get_template_part( 'parts/elements/header-menu-logo' ); ?>
