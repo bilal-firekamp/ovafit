@@ -80,7 +80,8 @@ function misha_skip_cart_redirect_checkout($url)
 	return wc_get_checkout_url();
 }
 
-add_filter('woocommerce_ship_to_different_address_checked', '__return_true');
+add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
+
 
 /**
  * Filter used to custom 90 days interval for subscription
@@ -161,10 +162,10 @@ function show_preorder_process(){
 					<h3>Pre-orders are open!</h3>
 					<span class="subtitle">Place your order now and get a guaranteed shipment of metabolism plus
 					</span>
-					<p>All OveFit pre-orders will get one month free in <a href="javascript:void(0)" class="preordre-link">The Cysterhood</a>
+					<p>All OvaFit pre-orders will get one month free in The Cysterhood
 					</p>
-					<p>+</p>
-					<p class="last-tag"><strong>The first 100 pre-orders</strong> will receive a <a href="#" class="preordre-link">3 month supply of Ovasital</a> with their purchase. All orders will be shipped October 3rd*.
+					<p style="font-weight: 600">+</p>
+					<p class="last-tag"><strong>The first 100 pre-orders</strong> will receive a 3 month supply of Ovasital with their purchase. All orders will be shipped October 3rd*.
 					</p>
 					<a href="javascript:void(0);" class="preorder-btn">Pre-order Now</a>
 
@@ -212,11 +213,46 @@ function get_dynamic_orderno(){
 
 add_action('woocommerce_checkout_order_processed', 'kit_payment_complete', 10, 1);
 
-function kit_payment_complete( $order_id ){
+function send_email($templateName, $subject, $toEmail, $content) {
+	try {
+		$url = 'https://mandrillapp.com/api/1.0/messages/send-template';
+		$body = array(
+			'key' => 'Q4v4Y09DNCAoegCo_C9xcQ',
+			'template_name' => $templateName,
+			'template_content' => array(),
+			'message' => array(
+				'from_name' => 'OvaFit',
+				'from_email' => 'help@ovafit.org',
+				'subject' => $subject,
+				'to' => array(
+					array('email' => $toEmail)
+				),
+				'global_merge_vars' => $content
+			)
+		);
+		$args = array(
+			'blocking'    => true,
+			'method'      => 'POST',
+			'timeout'     => 45,
+			'sslverify'   => false,
+			'headers'     => array(
+				'Content-Type'  => 'application/json',
+			),
+			'body' => wp_json_encode($body),
+		);
+
+		$response = wp_remote_post($url, $args);
+	} catch(Exception $e) {
+		return $e->getMessage();
+	}
+}
+
+function kit_payment_complete( $order_id ){	
 	$status = 'wc-completed';
 	$order_count = wp_count_posts( 'shop_order' )->$status;
 	$order = wc_get_order( $order_id );
 	$billingEmail = $order->get_billing_email();
+	$firstName = $order->get_billing_first_name();
 	$billingCountry = $order->get_billing_country();
 	$isSubscription = false;
 	foreach ($order->get_items() as $item_id => $item ) {
@@ -246,6 +282,24 @@ function kit_payment_complete( $order_id ){
 		array_push($tags, 3344036);
 	}
 	
+	$content = array(
+		array('name' => 'first_name', 'content' => $firstName)
+	);
+	
+	if ($isSubscription) {
+		if ($order_count < 100) {
+			send_email('pre-order-subscription', 'Your pre-order has been placed.', $billingEmail, $content);
+		} else {
+			send_email('pre-order-subscription-after-100', 'Your pre-order has been placed.', $billingEmail, $content);
+		}
+	} else {
+		if ($order_count < 100) {
+			send_email('pre-order-after-100', 'Your pre-order has been placed.', $billingEmail, $content);
+		} else {
+			send_email('pre-order', 'Your pre-order has been placed.', $billingEmail, $content);
+		}
+	}
+	
 	$body = array(
 		'api_secret' => '66di68vayLr8pWt1Mi6EfBrDHr0cuzNMcO5AizfUMX4',
 		'email' => $billingEmail,
@@ -263,5 +317,4 @@ function kit_payment_complete( $order_id ){
     );
 	
 	$response = wp_remote_post($url, $args);
-	
 }
